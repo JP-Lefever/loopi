@@ -1,0 +1,94 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.sectionPrice {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    color : var(--white-platinium);
+    justify-content: center;
+}
+
+.h1 {
+    margin : 5vh;
+    font-family: var(--title-font2), sans-serif;
+    color : var(--white-platinium);
+    font-size: 6em;
+}
+
+.h2{
+    font-family: var(--title-font2), sans-serif;
+    padding : 1em;
+
+    font-size: 2em;
+}
+
+
+
+.article{
+    display: flex;
+    align-items: flex-end;
+}
+
+.article:nth-child(2) .ul li:last-child {
+    height: 12vh;
+}
+
+
+.ul {
+    list-style: none;
+}
+
+
+
+.ul li {
+    border-top: solid 1px var(--white-platinium);
+    border-bottom: solid 1px var(--white-platinium);
+    padding : 1em;
+    font-family: var(--paragraph-font), sans-serif;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.ul li:last-child {
+    border-bottom : none;
+}
+
+.sectionPrice .article:first-child div {
+    border-left: solid 2px var(--beige-orange);
+    border-top: solid 2px var(--beige-orange);
+    border-bottom: solid 2px var(--beige-orange);
+    border-top-width: 10px;
+    border-top-left-radius: 10px;
+}
+
+.sectionPrice .article:nth-child(2) div {
+    border: solid 2px var(--red);
+    border-top-width: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.sectionPrice .article:last-child div {
+    border-right: solid 2px var(--beige-orange);
+    border-top: solid 2px var(--beige-orange);
+    border-bottom: solid 2px var(--beige-orange);
+    border-top-width: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.ul li.price {
+    font-weight: bolder;
+    color: var(--beige-orange);
+    width: 25vw;
+}

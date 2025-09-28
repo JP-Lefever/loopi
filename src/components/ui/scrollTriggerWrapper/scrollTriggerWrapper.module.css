@@ -1,0 +1,10 @@
+.section {
+    position: relative;
+    width: 120vw;
+    overflow: hidden;
+    background-image: url("/images/black.webp");
+    background-size: cover;
+
+}
+
+

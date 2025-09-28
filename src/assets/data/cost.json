@@ -1,0 +1,36 @@
+{
+  "services": [
+    {
+      "id" : 1,
+      "name": "Refonte & optimisation",
+      "price": "À partir de 1499€",
+      "scope": "Audit complet + refonte des pages principales",
+      "responsive": "Adapté aux mobiles et tablettes",
+      "design_ux": "UX & Design sur-mesure",
+      "seo": "Optimisation du référencement",
+      "timeline": "3–5 semaines"
+    },
+
+    {
+      "id" : 2,
+      "name": "Site vitrine",
+      "price": "À partir de 499€",
+      "scope": "1–5 pages",
+      "responsive": "Adapté aux mobiles et tablettes",
+      "design_ux": "UX & Design sur-mesure",
+      "seo": "Référencement naturel",
+      "timeline": "1–4 semaines"
+    },
+
+    {
+      "id" : 3,
+      "name": "Développement sur mesure",
+      "price": "Sur devis",
+      "scope": "Pages illimitées et fonctionnalités personnalisées",
+      "responsive": "Adapté aux mobiles et tablettes",
+      "design_ux": "UX & Design sur-mesure",
+      "seo": "Optimisation du référencement",
+      "timeline": "Délais selon projet"
+    }
+  ]
+}

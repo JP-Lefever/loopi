@@ -1,0 +1,36 @@
+
+@font-face {
+  font-family: 'neue';
+  src: url('/fonts/NeueBold.ttf');
+}
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --beige-orange : #FCD946;
+  --white-platinium : #DDE2E4;
+  --white-pure : #ffffff;
+  --red : #E55139;
+  --title-size : 4em;
+  --black-nuance : #161616;
+  --title-font2 : "neue", sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+  max-width: 100vw;
+
+}
+
+
+
+
+
+
+

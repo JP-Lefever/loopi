@@ -1,0 +1,40 @@
+[
+  {
+    "id": 0,
+    "name": "\u2776 Briefing",
+    "image": "/images/services/brief.webp",
+    "description": "Chez Web & Moka, on commence par discuter de votre projet autour d’un café. On échange sur votre entreprise, vos objectifs, vos valeurs et vos besoins pour bien cerner votre univers."
+  },
+  {
+    "id": 1,
+    "name": " \u2777 Conseil & Stratégie",
+    "image": "/images/services/strat.webp",
+    "description": "On discute des meilleures options pour votre site : fonctionnalités, parcours utilisateur, et priorités pour que votre présence en ligne soit efficace et cohérente."
+  },
+  {
+    "id": 2,
+    "name": "\u2778 Design & UX",
+    "image": "/images/services/ui.webp",
+    "description": "Je transforme votre identité (couleurs, typographies, style graphique) en une maquette que vous pouvez visualiser et ajuster. Cela vous permet de vous projeter et de valider le style avant de passer au développement."
+  },
+  {
+    "id": 3,
+    "name": "\u2779 Développement sur mesure",
+    "image": "/images/services/code.webp",
+    "description": "La magie commence et votre maquette prend vie : un site web fluide,  rapide et accessible sur tous les appareils. Chaque détail est pensé pour offrir une expérience agréable à vos utilisateurs."
+  },
+  {
+    "id": 4,
+    "name": "\u277A SEO & Visibilité",
+    "image": "/images/services/seo.webp",
+    "description": "Dès la mise en ligne, votre site est optimisé pour être visible sur les moteurs de recherche et attirer vos futurs visiteurs de manière naturelle."
+  },
+  {
+    "id": 5,
+    "name": "\u277B Mise en production & Support",
+    "image": "/images/services/support.webp",
+    "description": "Le site est mis en ligne et je reste à vos côtés pour tout ajustement, optimisation ou assistance. Votre site évolue avec votre projet, toujours prêt à refléter vos besoins et vos ambitions."
+  }
+
+]
+

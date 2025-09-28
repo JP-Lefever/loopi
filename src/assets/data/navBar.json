@@ -1,0 +1,35 @@
+[
+  {
+    "id" : 1,
+    "label" : "Accueil",
+    "link" : "#home"
+  },
+  {
+    "id" : 6,
+    "label" : "A propos",
+    "link" : "#about"
+  },
+  {
+    "id" : 3,
+    "label" : "Process",
+    "link" : "#process"
+  },
+  {
+    "id" : 5,
+    "label" : "Réalisations",
+    "link" : "#realisations"
+  },
+  {
+    "id" : 7,
+    "label" : "Tarifs",
+    "link" : "#tarifs"
+  },
+  {
+    "id" : 4,
+    "label" : "Un projet ?",
+    "link" : "#contact"
+  }
+
+
+
+]

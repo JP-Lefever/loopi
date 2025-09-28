@@ -1,0 +1,55 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-nuance);
+    align-items: center;
+}
+
+.figure {
+    margin-left: 2vw;
+}
+
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    right: 2vw;
+    top: 3vh;
+}
+
+.nav ul li {
+    list-style: none;
+    border-right : none;
+    padding: 0.1em ;
+    margin: 0;
+    background-image: linear-gradient(var(--red), var(--red));
+    background-repeat: no-repeat;
+    background-size: 100% 0 ;
+    background-position: top;
+    transition: background-size 400ms ease-in-out;
+}
+
+.nav ul li:hover{
+
+    background-size: 100% 100%;
+    color: var(--white-platinium);
+}
+
+
+.link{
+    font-family: var(--title-font2), sans-serif;
+    color : var(--beige-orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li:hover .link {
+    color: var(--black-nuance);
+}
+
+.active {
+    background-color: var(--red);
+    color: var(--black-nuance);
+}
