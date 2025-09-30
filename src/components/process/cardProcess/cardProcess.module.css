@@ -1,73 +1,76 @@
 .card {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-
-    margin: 10px;
-
-    /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
-}
-
-.infoContainer{
-    min-height: 18vh;
-    width : 50%;
-    display: flex;
     flex-direction: column;
-    font-family: var(--title-font2),sans-serif;
-    padding: 1em;
-    font-size: 1.2em;
-    font-weight: bold;
-    line-height: 1.5em;
+    align-items: center;
+    margin: 10px;
+    height: 80vh;
+    width: 23vw;
+    background-color: var(--blue-coin);
+    transition: transform 0.3s ease-in-out;
+
+    @media screen and (max-width: 568px){
+        min-height: fit-content;
+        width: 90vw;
+        margin : 0;
+
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 43vw;
+
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+        min-height: 87vh;
+    }
 
 }
 
-.title{
-    font-family: var(--title-font2),sans-serif;
-    font-size: 3em;
-    padding-left: 0.4em;
+.card:hover {
+    transform: scale(1.05);
 }
 
 .imageContainer{
     position: relative;
-    border : solid 8px black;
-    width: 20vw;
-    min-height: 60vh;
-    margin: 1em auto ;
-    padding-top: 1em;
-    background-color: white;
+    width: 100%;
+    min-height: 50vh;
+
 
 }
 
 .image {
     object-fit: cover;
-    padding: 1em;
+}
 
+.infoContainer{
+    font-family: var(--paragraph-font),sans-serif;
+    line-height: 1.5em;
+    width: 20vw;
+    color: white;
+    font-weight: lighter;
+    @media screen and (max-width: 568px){
+        width: 80vw;
+        padding : 10px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 43vw;
+        padding : 10px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        width: 23vw;
+        padding : 10px;
+    }
+}
+
+.title{
+    font-family: var(--title-font2),sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    margin : 1em auto;
+    color: var(--beige-orange );
+    @media screen and (max-width: 568px){
+
+        margin : 0.5em auto;
+    }
 }
 
 
-
-/*.card:hover {*/
-/*    transform: translateY(-5px);*/
-/*    box-shadow: 0 8px 20px rgba(0,0,0,0.3);*/
-/*}*/
-
-
-
-/*.overlay {*/
-/*    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);*/
-/*    color: white;*/
-/*    padding: 10px;*/
-
-/*    width: 100%;*/
-/*}*/
-
-/*.title {*/
-/*    font-size: 1rem;*/
-/*    font-weight: bold;*/
-/*    margin: 0;*/
-/*}*/
-
-/*.year {*/
-/*    font-size: 0.8rem;*/
-/*    opacity: 0.8;*/
-/*}*/

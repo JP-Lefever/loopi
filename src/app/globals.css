@@ -26,10 +26,6 @@
 
 body{
   overflow-x: hidden;
-  height: 100%;
-  max-width: 100vw;
-
-  background-size: 400% 400%;
   animation: gradientAnimation 24s ease infinite;
 }
 
