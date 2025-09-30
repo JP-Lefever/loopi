@@ -22,15 +22,15 @@ export default function HomePage() {
                     <Header />
             </header>
             <main>
+                <section id={"process"}>
+                    <Process />
+                </section>
                 <section id={"realisations"} >
                     <Works/>
                 </section>
                {/*<section id={"about"} >*/}
                {/*    <About/>*/}
                {/*</section>*/}
-               {/* <section id={"process"}>*/}
-               {/*     <Process />*/}
-               {/* </section>*/}
                 <section id={"tarifs"} className={styles.cost}>
                     <Cost/>
                 </section>

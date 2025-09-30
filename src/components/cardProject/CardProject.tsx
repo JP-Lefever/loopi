@@ -3,8 +3,6 @@ import {ProjectProps} from "@/types/definitions"
 import styles from "./cardProject.module.css"
 import Image from "next/image";
 import {CircleArrowRight} from "lucide-react";
-import Link from "next/link";
-
 
 
 export default function CardProject({dataProject}: {dataProject: ProjectProps}) {

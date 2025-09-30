@@ -1,43 +1,30 @@
 
 
 .section{
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100vw;
+    width: 95vw;
+    margin: 0 auto 8vh auto;
+    background-color: var(--black-nuance);
+    border-radius: 10px;
 }
 
-.articleCard{
-    border-right: solid 1px black;
-    min-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 45vw;
-    background-color: var(--red);
 
-}
 
 .sectionCard{
     display: flex;
     padding: 20px;
-    background-color: var(--red);
-    margin-left: 15vw;
-    height: 85vh;
-    align-items: center;
+    min-height: 85vh;
+    align-items: flex-start;
+    justify-content: center;
 
 }
 
 
 
 .h2{
-    background-color: var(--red);
     font-family: var(--title-font2), sans-serif;
     font-size: var(--title-size);
-    border-bottom: solid 1px black;
     height: 15vh;
-    display: flex;
-    align-items: center;
-    padding-left: 0.5em;
+    padding-left: 1em;
 
 
 }

@@ -13,25 +13,22 @@ export default function Process() {
     return (
         <>
 
-                <ScrollTriggerWrapper containerRef={containerRef}>
+
                     <section className={styles.section}>
-                        <article className={styles.h2}>
-                            <h2>Process</h2>
-                        </article>
+                        {/*<article className={styles.h2}>*/}
+                        {/*    <h2>Process</h2>*/}
+                        {/*</article>*/}
 
-                        <article ref={containerRef} className={styles.sectionCard}>
+                        <article  className={styles.sectionCard}>
                             {dataServices.map((service)=>
-
-                                <article className={styles.articleCard} key={service.id}>
-                                    <CardProcess service = {service}/>
-                                </article>
+                                    <CardProcess key={service.id} service = {service}/>
 
                             )}
 
                         </article>
 
                     </section>
-                </ScrollTriggerWrapper>
+
 
         </>
     )
