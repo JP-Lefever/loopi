@@ -21,20 +21,20 @@ export default function HomePage() {
                {/*</IntroWrapper>*/}
                     <Header />
             </header>
-            {/*<main>*/}
-            {/*   <section id={"about"} >*/}
-            {/*       <About/>*/}
-            {/*   </section>*/}
-            {/*    <section id={"process"}>*/}
-            {/*        <Process />*/}
-            {/*    </section>*/}
-            {/*    <section id={"realisations"} >*/}
-            {/*        <Realisation/>*/}
-            {/*    </section>*/}
-            {/*    <section id={"tarifs"} className={styles.cost}>*/}
-            {/*        <Cost/>*/}
-            {/*    </section>*/}
-            {/*</main>*/}
+            <main>
+               <section id={"about"} >
+                   <About/>
+               </section>
+                {/*<section id={"process"}>*/}
+                {/*    <Process />*/}
+                {/*</section>*/}
+                {/*<section id={"realisations"} >*/}
+                {/*    <Realisation/>*/}
+                {/*</section>*/}
+                {/*<section id={"tarifs"} className={styles.cost}>*/}
+                {/*    <Cost/>*/}
+                {/*</section>*/}
+            </main>
 
         </>
     );

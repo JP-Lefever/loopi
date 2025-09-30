@@ -1,11 +1,11 @@
 
 .aboutSection {
-    background-color: var(--black-nuance);
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: -20rem;
+
     z-index: 2;
 }
 
@@ -37,9 +37,8 @@
     font-family: var(--subtitle-font), sans-serif;
     color : var(--white-platinium);
     font-size: 2em;
-    width: 40vw;
-    position: relative;
-    left: 20vw;
+
+   width: 80vw;
     margin: 0 auto ;
     padding: 0 0 5vh 0;
     line-height: 1.6em;
