@@ -25,23 +25,6 @@
       "synopsis" : "Site vitrine pour camping/village vacances",
       "web" : "https://camping-seven-mu.vercel.app/"
 
-    },
-    {
-      "id" : 2,
-      "name" : "Portfolio",
-      "image" : "/images/projects/portfolio.png",
-      "type" : "Voir le site",
-      "synopsis" : "Portfolio personnel",
-      "web" : "https://lenclos.vercel.app/"
-
-    },
-    {
-      "id" : 1,
-      "name" : "Loopi Web",
-      "image" : "/images/projects/dev.png",
-      "type" : "Voir le site",
-      "synopsis" : "Premier site vitrine de l'entreprise",
-      "web" : "https://web-and-moka.vercel.app/"
-
     }
+
   ]
