@@ -6,6 +6,7 @@ import Process from "@/components/process/Process";
 import About from "@/components/about/About";
 import Realisation from "@/components/realisations/Realisation";
 import Cost from "@/components/cost/Cost";
+import Works from "@/components/works/Works";
 
 
 
@@ -21,20 +22,20 @@ export default function HomePage() {
                {/*</IntroWrapper>*/}
                     <Header />
             </header>
-            {/*<main>*/}
-            {/*   <section id={"about"} >*/}
-            {/*       <About/>*/}
-            {/*   </section>*/}
-            {/*    <section id={"process"}>*/}
-            {/*        <Process />*/}
-            {/*    </section>*/}
-            {/*    <section id={"realisations"} >*/}
-            {/*        <Realisation/>*/}
-            {/*    </section>*/}
-            {/*    <section id={"tarifs"} className={styles.cost}>*/}
-            {/*        <Cost/>*/}
-            {/*    </section>*/}
-            {/*</main>*/}
+            <main>
+                <section id={"realisations"} >
+                    <Works/>
+                </section>
+               {/*<section id={"about"} >*/}
+               {/*    <About/>*/}
+               {/*</section>*/}
+               {/* <section id={"process"}>*/}
+               {/*     <Process />*/}
+               {/* </section>*/}
+               {/* <section id={"tarifs"} className={styles.cost}>*/}
+               {/*     <Cost/>*/}
+               {/* </section>*/}
+            </main>
 
         </>
     );

@@ -16,10 +16,11 @@ export type ServicesProps = {
 
 export type ProjectProps = {
     id: number;
-    label : string;
+    name: string;
     image: string;
-    description: string;
-    link: string;
+    type: string;
+    synopsis: string;
+    web: string;
 }
 
 export type CostServicesProps = {
