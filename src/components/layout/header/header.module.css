@@ -1,57 +1,52 @@
 .header {
     position: relative;
-    width: 100%;
-    min-height: 100vh;
+    width: 80vw;
+    min-height: 80vh;
     overflow: hidden;
+    margin : auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    background-color: var(--black-nuance);
-    font-family: var(--title-font2), sans-serif;
-    padding-top: 10vh;
+    align-items: center;
+
+    @media screen and (max-width: 568px){
+        width: 90vw
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 90vw;
+    }
 }
 
 
-.textBlock {
-    position: relative;
-    z-index: 2;
-    width: 50vw;
-    margin: 0 auto;
-    text-align: center;
+.h3{
+    color : var(--white-platinium);
+    font-size : 6em;
+    font-family : var(--title-font2), sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 568px){
+        font-size : 3.5em;
+        text-align: center;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        font-size :4.5em;
+        text-align: center;
+    }
 }
 
-
-.videoWrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60vw;
-    z-index: 1;
-
-}
 
 .video {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 8px;
-}
+    width: fit-content;
+    height: 55vh;
+    border-radius: 20px;
+    @media screen and (max-width: 568px){
+        height: fit-content;
+        width: 90vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+       height: fit-content;
+        width: 80vw;
 
-
-.slogans {
-    font-size: 6vw;
-    color: var(--white-platinium);
-    margin: 0 0 1rem;
-}
-
-.slogans span {
-    color: var(--beige-orange);
-}
-
-.h3, .subtitle {
-    font-size: 6vw;
-    color: var(--white-platinium);
-    margin: 1rem 0;
+    }
 }

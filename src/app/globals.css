@@ -24,10 +24,21 @@
 
 body{
   overflow-x: hidden;
+  height: 100%;
   max-width: 100vw;
 
+  background-size: 400% 400%;
+  animation: gradientAnimation 24s ease infinite;
 }
 
+@keyframes gradientAnimation {
+  0%   { background-color: #C6A32A; }
+  20%  { background-color: #000000; }
+  40%  { background-color: #6277B6; }
+  60%  { background-color: #C69E2F; }
+  80%  { background-color: #070E07 }
+  100% { background-color: #C5844A }
+}
 
 
 
