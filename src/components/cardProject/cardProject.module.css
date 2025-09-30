@@ -2,28 +2,28 @@
     position: relative;
     width : fit-content;
     margin : auto;
-    min-height: 70vh;
+    min-height: 75vh;
     cursor:pointer;
     text-decoration: none;
-    @media screen and (min-width: 1024px) and (max-width: 1280px) {
-        min-height: 75vh;
-    }
+
 }
 
 .figure {
     position: relative;
-    width: 80vw;
-    height: 60vh;
-
-    @media screen and (min-width: 1281px) {
-
-        width: 20vw;
-        height: 50vh;
+    width: 20vw;
+    height: 50vh;
+    @media screen and (max-width: 568px){
+        width: 80vw;
     }
-    @media screen and (min-width: 1024px) and (max-width: 1280px) {
-        width: 25vw;
-        height: 50vh;
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+
+
     }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        width: 24vw;
+
+    }
+
 
 }
 
@@ -38,16 +38,20 @@
     left: 0;
     display: flex;
     justify-content: space-between;
-    width:79vw;
+    width:20vw;
     padding : 1vh 1vw;
     align-items: center;
-    @media screen and (min-width: 1281px) {
-
-    width:20vw;
+    @media screen and (max-width: 568px){
+        width: 80vw;
 
     }
-    @media screen and (min-width: 1024px) and (max-width: 1280px) {
-        width: 25vw;
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 40vw;
+
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        width: 24vw;
+
 
     }
 
@@ -57,12 +61,16 @@
     border-radius: 10px;
     background-color: var(--black-nuance);
     font-family: var(--title-font2), sans-serif;
-    padding: 0.2vh 1vw;
+    padding: 0.2vh 0.3vw;
     color: var(--white-pure);
-    @media screen and (min-width: 1080px) {
-        padding: 0.2vh 0.3vw;
+    @media screen and (max-width: 568px){
+        padding: 0.5vh 1vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        padding: 0.5vh 1vw;
 
     }
+
 }
 .sectionCard .type {
     opacity: 0;
@@ -95,35 +103,49 @@
     padding : 0.5em 1em;
     color: var(--white-pure);
     font-weight: bold;
-    width: 80vw;
-
-    @media screen and (min-width: 1080px) {
     width: 19vw;
-    }
+
+
 
 }
 .h2{
     font-size: 2em;
     letter-spacing: 0.1em;
-    width: 78vw;
-    font-family: var(--title-font2), sans-serif;
-    @media screen and (min-width: 1080px) {
-
     width: 20vw;
-    }
+    font-family: var(--title-font2), sans-serif;
+    color: var(--beige-orange);
+    @media screen and (max-width: 568px){
+        width: 80vw;
 
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 40vw;
+
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        width: 24vw;
+
+
+    }
 }
 
 .syno{
     font-size: 1.5em;
     letter-spacing: 0.1em;
-    width: 80vw;
+    width: 20vw;
     font-family: var(--title-font2), sans-serif;
     font-weight: lighter;
-    @media screen and (min-width: 1080px) {
 
-        width: 20vw;
+    @media screen and (max-width: 568px){
+        width: 80vw;
 
     }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 40vw;
 
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        width: 23vw;
+
+    }
 }

@@ -1,27 +1,9 @@
   [
     {
-      "id" : 1,
-      "name" : "Camping template",
-      "image" : "/images/projects/camping.png",
-      "type" : "Voir le site",
-      "synopsis" : "Site vitrine pour camping/village vacances",
-      "web" : "https://camping-seven-mu.vercel.app/"
-
-    },
-    {
-      "id" : 2,
-      "name" : "Loopi Web",
-      "image" : "/images/projects/dev.png",
-      "type" : "Voir le site",
-      "synopsis" : "Site vitrine réalisé pour entreprise dev web",
-      "web" : "https://web-and-moka.vercel.app/"
-
-    },
-    {
-      "id" : 3,
+      "id" : 5,
       "name" : "E.F.F.C.A",
       "image" : "/images/projects/EFFCA.png",
-
+      "type" : "Voir le site",
       "synopsis" : "Site web pour le club de football du village de Fons",
       "web" : "https://effca.vercel.app/"
 
@@ -36,12 +18,30 @@
 
     },
     {
-      "id" : 5,
+      "id" : 3,
+      "name" : "Camping",
+      "image" : "/images/projects/camping.png",
+      "type" : "Voir le site",
+      "synopsis" : "Site vitrine pour camping/village vacances",
+      "web" : "https://camping-seven-mu.vercel.app/"
+
+    },
+    {
+      "id" : 2,
       "name" : "Portfolio",
       "image" : "/images/projects/portfolio.png",
       "type" : "Voir le site",
       "synopsis" : "Portfolio personnel",
       "web" : "https://lenclos.vercel.app/"
+
+    },
+    {
+      "id" : 1,
+      "name" : "Loopi Web",
+      "image" : "/images/projects/dev.png",
+      "type" : "Voir le site",
+      "synopsis" : "Premier site vitrine de l'entreprise",
+      "web" : "https://web-and-moka.vercel.app/"
 
     }
   ]
