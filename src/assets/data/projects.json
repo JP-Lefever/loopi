@@ -1,30 +1,47 @@
-[
-  {
-    "id" : 1,
-    "label" : "Glamping Spot",
-    "image" : "/images/projects/camping/project.png",
-    "description" : "Site web pour hotellerie de plein air",
-    "link" : "https://camping-seven-mu.vercel.app/"
-  },
-  {
-    "id" : 2,
-    "label" : "E.F.F.C.A",
-    "image" : "/images/projects/effca/project.png",
-    "description" : "Site web pour le club de football du village de Fons",
-    "link" : "https://effca.vercel.app/"
-  },
-  {
-    "id" : 3,
-    "label" : "L'Enclos",
-    "image" : "/images/projects/enclos/project.png",
-    "description" : "Site web pour compagnie de théâtre professionnelle",
-    "link" : "https://lenclos.vercel.app/"
-  },
-  {
-    "id" : 4,
-    "label" : "Portfolio",
-    "image" : "/images/projects/portfolio/project.png",
-    "description" : "Mon portfolio, regroupant mes différents projets",
-    "link" : "https://jplef.fr/"
-  }
-]
+  [
+    {
+      "id" : 1,
+      "name" : "Camping template",
+      "image" : "/images/projects/camping.png",
+      "type" : "Voir le site",
+      "synopsis" : "Site vitrine pour camping/village vacances",
+      "web" : "https://camping-seven-mu.vercel.app/"
+
+    },
+    {
+      "id" : 2,
+      "name" : "Loopi Web",
+      "image" : "/images/projects/dev.png",
+      "type" : "Voir le site",
+      "synopsis" : "Site vitrine réalisé pour entreprise dev web",
+      "web" : "https://web-and-moka.vercel.app/"
+
+    },
+    {
+      "id" : 3,
+      "name" : "E.F.F.C.A",
+      "image" : "/images/projects/EFFCA.png",
+
+      "synopsis" : "Site web pour le club de football du village de Fons",
+      "web" : "https://effca.vercel.app/"
+
+    },
+    {
+      "id" : 4,
+      "name" : "La Compagnie L'Enclos",
+      "image" : "/images/projects/enclos_v2.png",
+      "type" : "Voir le site",
+      "synopsis" : "Site web pour compagnie de théâtre professionnelle",
+      "web" : "https://lenclos.vercel.app/"
+
+    },
+    {
+      "id" : 5,
+      "name" : "Portfolio",
+      "image" : "/images/projects/portfolio.png",
+      "type" : "Voir le site",
+      "synopsis" : "Portfolio personnel",
+      "web" : "https://lenclos.vercel.app/"
+
+    }
+  ]
