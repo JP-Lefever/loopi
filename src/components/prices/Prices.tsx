@@ -1,9 +1,9 @@
-import styles from "./cost.module.css"
+import styles from "./prices.module.css"
 import dataCost from "@/assets/data/cost.json"
 import { CostServicesProps} from "@/types/definitions";
 import {ScrollAnimation, ScrollAnimation1} from "@/components/ui/animation/ScrollAnimation";
 
-export  default function Cost(){
+export  default function Prices(){
 
     return (
         <>

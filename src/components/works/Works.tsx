@@ -1,7 +1,7 @@
 
 import styles from "./works.module.css"
 import data from "@/assets/data/projects.json"
-import CardProject from "@/components/cardProject/CardProject";
+import CardProject from "@/components/works/cardProject/CardProject";
 
 export default function Works() {
 

@@ -1,11 +1,8 @@
 
-import styles from "./page.module.css"
 import Header from "@/components/layout/header/Header";
-import IntroWrapper from "@/components/ui/introWrapper/IntroWrapper";
-import Process from "@/components/process/Process";
-import About from "@/components/about/About";
-import Cost from "@/components/cost/Cost";
 import Works from "@/components/works/Works";
+import Process from "@/components/process/Process";
+import Prices from "@/components/prices/Prices";
 
 
 
@@ -13,12 +10,9 @@ import Works from "@/components/works/Works";
 
 export default function HomePage() {
 
-
     return (
         <>
             <header>
-               {/* <IntroWrapper >*/}
-               {/*</IntroWrapper>*/}
                     <Header />
             </header>
             <main>
@@ -31,8 +25,8 @@ export default function HomePage() {
                {/*<section id={"about"} >*/}
                {/*    <About/>*/}
                {/*</section>*/}
-                <section id={"tarifs"} className={styles.cost}>
-                    <Cost/>
+                <section id={"tarifs"}>
+                    <Prices/>
                 </section>
             </main>
 

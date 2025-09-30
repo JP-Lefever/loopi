@@ -7,6 +7,22 @@
     width: 23vw;
     background-color: var(--blue-coin);
     transition: transform 0.3s ease-in-out;
+
+    @media screen and (max-width: 568px){
+        min-height: fit-content;
+        width: 90vw;
+        margin : 0;
+
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 43vw;
+
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+        min-height: 87vh;
+    }
+
 }
 
 .card:hover {
@@ -31,6 +47,18 @@
     width: 20vw;
     color: white;
     font-weight: lighter;
+    @media screen and (max-width: 568px){
+        width: 80vw;
+        padding : 10px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 43vw;
+        padding : 10px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        width: 23vw;
+        padding : 10px;
+    }
 }
 
 .title{
@@ -39,6 +67,10 @@
     text-align: center;
     margin : 1em auto;
     color: var(--beige-orange );
+    @media screen and (max-width: 568px){
+
+        margin : 0.5em auto;
+    }
 }
 
 

@@ -5,6 +5,10 @@
     margin: 0 auto 8vh auto;
     background-color: var(--black-nuance);
     border-radius: 10px;
+
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        width: 98vw;
+    }
 }
 
 
@@ -13,8 +17,21 @@
     display: flex;
     padding: 20px;
     min-height: 85vh;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    @media screen and (max-width: 568px){
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 10px;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        min-height: fit-content;
+
+    }
 
 }
 
