@@ -25,7 +25,7 @@
 }
 
 body{
-  overflow-x: hidden;
+
   animation: gradientAnimation 24s ease infinite;
 }
 
