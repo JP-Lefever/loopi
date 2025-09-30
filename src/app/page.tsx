@@ -32,9 +32,9 @@ export default function HomePage() {
                {/* <section id={"process"}>*/}
                {/*     <Process />*/}
                {/* </section>*/}
-               {/* <section id={"tarifs"} className={styles.cost}>*/}
-               {/*     <Cost/>*/}
-               {/* </section>*/}
+                <section id={"tarifs"} className={styles.cost}>
+                    <Cost/>
+                </section>
             </main>
 
         </>
