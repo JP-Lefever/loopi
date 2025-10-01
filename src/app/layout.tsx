@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={` ${paragraphFont.variable} ${subtitle.variable}`}  id={"home"}>
-        <NavBar/>
+      <body className={` ${paragraphFont.variable} ${subtitle.variable}`} id={"home"} >
+        <NavBar />
         {children}
       </body>
     </html>
