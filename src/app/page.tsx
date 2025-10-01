@@ -1,11 +1,8 @@
 
-import styles from "./page.module.css"
 import Header from "@/components/layout/header/Header";
-import IntroWrapper from "@/components/ui/introWrapper/IntroWrapper";
+import Works from "@/components/works/Works";
 import Process from "@/components/process/Process";
-import About from "@/components/about/About";
-import Realisation from "@/components/realisations/Realisation";
-import Cost from "@/components/cost/Cost";
+import Prices from "@/components/prices/Prices";
 
 
 
@@ -13,27 +10,24 @@ import Cost from "@/components/cost/Cost";
 
 export default function HomePage() {
 
-
     return (
         <>
             <header>
-               {/* <IntroWrapper >*/}
-               {/*</IntroWrapper>*/}
                     <Header />
             </header>
             <main>
-               <section id={"about"} >
-                   <About/>
-               </section>
-                {/*<section id={"process"}>*/}
-                {/*    <Process />*/}
-                {/*</section>*/}
-                {/*<section id={"realisations"} >*/}
-                {/*    <Realisation/>*/}
-                {/*</section>*/}
-                {/*<section id={"tarifs"} className={styles.cost}>*/}
-                {/*    <Cost/>*/}
-                {/*</section>*/}
+                <section id={"process"}>
+                    <Process />
+                </section>
+                <section id={"realisations"} >
+                    <Works/>
+                </section>
+               {/*<section id={"about"} >*/}
+               {/*    <About/>*/}
+               {/*</section>*/}
+                <section id={"tarifs"}>
+                    <Prices/>
+                </section>
             </main>
 
         </>

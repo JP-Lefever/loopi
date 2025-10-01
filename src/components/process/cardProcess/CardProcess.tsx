@@ -10,14 +10,14 @@ const {name, image, description} = service;
     return (
         <>
 
-            <h2 className={styles.title}>{name}</h2>
             <section className={styles.card}>
-                <article className={styles.infoContainer}>
-                    <p className={styles.year}>{description}</p>
-                </article>
                 <figure className={styles.imageContainer}>
                     <Image className={styles.image} src={image} alt={name} fill={true} />
                 </figure>
+                <article className={styles.infoContainer}>
+                    <h2 className={styles.title}>{name}</h2>
+                    <p className={styles.year}>{description}</p>
+                </article>
             </section>
         </>
     )

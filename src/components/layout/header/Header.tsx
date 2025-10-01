@@ -12,17 +12,19 @@ export default function Header() {
     return (
         <header  className={styles.header}>
             <article>
-                <h3 className={styles.h3}>{dataHeader.description}</h3>
+                <h1 className={styles.h1}>{dataHeader.description}</h1>
             </article>
             <TiltCard>
-            <video
-                className={styles.video}
-                src="/videos/head.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-            />
+                <div className={styles.videoWrapper}>
+                    <video
+                        className={styles.video}
+                        src="/videos/head.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    />
+                </div>
             </TiltCard>
         </header>
     )
