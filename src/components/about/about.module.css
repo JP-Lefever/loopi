@@ -1,47 +1,53 @@
 
 .aboutSection {
-
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 90vw;
+    border: 1px solid var(--black-nuance);
+    border-radius : 10px;
+    background-color: var(--black-nuance);
+    margin: 10vh auto;
 
-    z-index: 2;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.figure{
+    position: relative;
+    width: 10vw;
+    height: 10vh;
+
+}
+
+.image {
+    object-fit: contain;
+    transform: rotate(20deg);
 }
 
 .h2 {
-    text-align: center;
     font-family: var(--title-font2), sans-serif;
     color : var(--white-platinium);
-    font-size: 12em;
-    font-weight: bold;
-    position: sticky;
-    top: 10vh;
-    z-index: 100;
-    width: fit-content;
-    margin: auto;
+    font-size: 6em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 
-.h2sub {
-    text-align: center;
-    font-family: var(--title-font2), sans-serif;
-    color : var(--beige-orange);
-    font-size: 10em;
-    font-weight: bold;
-    z-index: 3;
-
-}
 
 .article {
-    font-family: var(--subtitle-font), sans-serif;
+    font-family: var(--paragraph-font), sans-serif;
     color : var(--white-platinium);
-    font-size: 2em;
-
-   width: 80vw;
-    margin: 0 auto ;
-    padding: 0 0 5vh 0;
-    line-height: 1.6em;
+    width: 80vw;
+    margin: auto;
+    padding :  5vh 0;
+    line-height: 1.8em;
     z-index: 4;
 }
 
