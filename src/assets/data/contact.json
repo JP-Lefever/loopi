@@ -1,0 +1,26 @@
+{
+  "firstName" : "Prénom",
+  "lastName" : "Nom",
+  "email" : "Email",
+  "phone" : "Téléphone",
+  "message" : "Message",
+  "submit" : "Envoyer",
+  "subject": [
+    {
+      "id" : 1,
+      "label": "Création site vitrine"
+    },
+    {
+      "id" : 2,
+      "label": "Refonte de site"
+    },
+    {
+      "id" : 3,
+      "label": "Developpement sur mesure"
+    },
+    {
+      "id" : 4,
+      "label": "Autre"
+    }
+  ]
+}

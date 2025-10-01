@@ -1,11 +1,5 @@
-import React from "react";
 
-export type buttonProps = {
-    onClick : ()=>void;
-    className : string;
-    children : React.ReactNode
 
-}
 
 export type ServicesProps = {
     id: number;
@@ -36,6 +30,13 @@ export type CostServicesProps = {
     api?: string;
 }
 
-export type CostProps = {
-    services : CostServicesProps[];
+export type ContactProps = {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    subject: string;
+    message: string;
 }
+
+export type ResultProps<T> = | {success: true, data : T} | {success: false, error: string};
