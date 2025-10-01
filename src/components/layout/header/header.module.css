@@ -1,7 +1,7 @@
 .header {
     position: relative;
     width: 80vw;
-    min-height: 80vh;
+    min-height: 90vh;
     overflow: hidden;
     margin : auto;
     display: flex;
@@ -9,11 +9,16 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 568px){
-        width: 90vw
+
+    @media screen and  (max-width: 568px){
+        width: 90vw;
+        min-height: 80vh;
     }
     @media screen and (min-width: 568px) and (max-width: 1024px){
         width: 90vw;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        min-height: 90vh;
     }
 }
 
@@ -26,7 +31,7 @@
     flex-direction: column;
 
     @media screen and (max-width: 375px){
-        font-size : 3em;
+        font-size : 2.5em;
         text-align: center;
     }
 
@@ -36,6 +41,9 @@
     }
     @media screen and (min-width: 568px) and (max-width: 1024px){
         font-size :4.5em;
+        text-align: center;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
         text-align: center;
     }
 }
@@ -53,6 +61,10 @@
     @media screen and (min-width: 568px) and (max-width: 1024px){
         width: 85vw;
         height: 42vh;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        width: 50vw;
+        height: 45vh;
     }
 }
 

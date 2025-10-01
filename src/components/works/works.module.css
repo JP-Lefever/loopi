@@ -1,6 +1,6 @@
 .section {
     width : 70vw;
-    margin: auto;
+    margin: 0 auto 10vh auto;
     background-color: var(--black-nuance );
     border-radius: 10px;
     padding: 2em;
