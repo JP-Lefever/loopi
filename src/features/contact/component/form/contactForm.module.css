@@ -1,3 +1,106 @@
 .form {
     height: 90vh;
+    color : var(--white-pure);
+    width: 60vw;
+    margin: auto;
+    font-family: var(--paragraph-font), sans-serif;
+}
+
+.form fieldset {
+    border: none;
+}
+
+.form label {
+    font-size : 1.2em
+}
+
+.h2 {
+    text-align: center;
+    font-size: 6em;
+    font-family: var(--title-font2), sans-serif;
+    color: var(--white-platinium);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.info div input {
+    height: 5vh;
+    border-radius: 5px;
+    padding-left: 0.5em;
+    transition: all 0.2s ease-in-out;
+    border-color: var(--white-platinium);
+    outline: none;
+
+}
+
+.info div input:focus {
+    border-color: var(--beige-orange);
+    box-shadow: 0 0 0 1px var(--beige-orange);
+    opacity: 90%;
+
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin : 2em 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.select {
+    width: 100%;
+    height: 5vh;
+    border-radius: 5px;
+    padding-left: 0.5em;
+    transition: all 0.2s ease-in-out;
+    border-color: var(--white-platinium);
+    outline: none;
+}
+
+.select:focus {
+    border-color: var(--beige-orange);
+    box-shadow: 0 0 0 2px var(--white-platinium);
+    opacity: 90%;
+}
+
+.message  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+}
+
+.message textarea {
+    border-radius: 5px;
+    height: 10vh;
+    transition: all 0.2s ease-in-out;
+    border-color: var(--white-platinium);
+    outline: none;
+}
+
+.message textarea:focus {
+    border-color: var(--white-platinium);
+    box-shadow: 0 0 0 2px var(--white-platinium);
+    opacity: 90%;
+}
+
+.button {
+    width: 100%;
+    margin : 2em 0;
+    height: 5vh;
+    background-color: var(--beige-orange);
+    border-radius: 5px;
+    font-family: var(--title-font2), sans-serif;
+    font-size: 1.5em;
 }

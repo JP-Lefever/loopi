@@ -5,6 +5,7 @@
   "phone" : "Téléphone",
   "message" : "Message",
   "submit" : "Envoyer",
+  "subjectLabel" : "Sujet",
   "subject": [
     {
       "id" : 1,

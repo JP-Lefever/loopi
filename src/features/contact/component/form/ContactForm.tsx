@@ -10,7 +10,7 @@ import {toast} from "react-toastify";
 
 export default function ContactForm(){
 
-    const {register, handleSubmit, formState: {errors}} = useForm<ContactProps>();
+    const {register, handleSubmit, formState: {errors}, reset} = useForm<ContactProps>();
 
     const onSubmit : SubmitHandler<ContactProps> = async (data : ContactProps)=>{
 
@@ -18,6 +18,7 @@ export default function ContactForm(){
 
         if(response.success){
             toast.success(response.data)
+            reset()
         } else{
             toast.error(response.error)
         }
@@ -27,8 +28,10 @@ export default function ContactForm(){
 
     return (
         <>
+        <section>
+            <h2 className={styles.h2}>{"Contact"}</h2>
             <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-                <fieldset className={styles.informations}>
+                <fieldset className={styles.info}>
                     <div role="group">
                         <label htmlFor="firstName">{dataForm.firstName}</label>
                         <input type="text"  placeholder="*************" {...register("firstName", {
@@ -77,7 +80,8 @@ export default function ContactForm(){
                     </div>
                 </fieldset>
                 <fieldset className={styles.subject}>
-                    <select {...register("subject")}>
+                    <label htmlFor="subject">{dataForm.subjectLabel}</label>
+                    <select className={styles.select} {...register("subject")}>
                         {dataForm.subject.map(subject => (
                             <option key={subject.id} value={subject.label}>{subject.label}</option>
                         ))}
@@ -97,6 +101,7 @@ export default function ContactForm(){
                 </fieldset>
                 <button className={styles.button} type="submit">{dataForm.submit}</button>
             </form>
+        </section>
         </>
     )
 }
