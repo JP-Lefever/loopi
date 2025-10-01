@@ -2,6 +2,7 @@
 import styles from "./process.module.css"
 import dataServices from "@/assets/data/services.json"
 import CardProcess from "@/components/process/cardProcess/CardProcess";
+import {ServicesProps} from "@/types/definitions";
 
 
 export default function Process() {
@@ -14,7 +15,7 @@ export default function Process() {
 
                     <section className={styles.section}>
                         <article  className={styles.sectionCard}>
-                            {dataServices.map((service)=>
+                            {dataServices.map((service : ServicesProps)=>
                                     <CardProcess key={service.id} service = {service}/>
 
                             )}

@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import {paragraphFont, subtitle} from "@/components/ui/fonts";
 import NavBar from "@/components/layout/navBar/NavBar";
+import {ToastContainer} from "react-toastify";
 
 
 export const metadata: Metadata = {
@@ -18,7 +19,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={` ${paragraphFont.variable} ${subtitle.variable}`} id={"home"} >
+      <body className={` ${paragraphFont.variable} ${subtitle.variable}`}>
+      <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+      />
         <NavBar />
         {children}
       </body>

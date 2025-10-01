@@ -9,10 +9,12 @@ import About from "@/components/about/About";
 
 
 
+
 export default function HomePage() {
 
     return (
         <>
+
             <header>
                     <Header />
             </header>
@@ -29,6 +31,7 @@ export default function HomePage() {
                 <section id={"tarifs"}>
                     <Prices/>
                 </section>
+
             </main>
 
         </>
