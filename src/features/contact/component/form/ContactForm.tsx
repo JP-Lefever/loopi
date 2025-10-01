@@ -37,7 +37,7 @@ export default function ContactForm(){
                 <fieldset className={styles.info}>
                     <div role="group">
 
-                        <input type="text"  placeholder="Prénom" {...register("firstName", {
+                        <input type="text"  placeholder={dataForm.firstName}{...register("firstName", {
                             required: dataErrors.require,
                             pattern : {
                                 value : /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,30}$/,
@@ -49,7 +49,7 @@ export default function ContactForm(){
                     </div>
                     <div role="group">
 
-                        <input type="text"  placeholder="Nom" {...register("lastName", {
+                        <input type="text"  placeholder={dataForm.lastName} {...register("lastName", {
                             required: dataErrors.require,
                             pattern: {
                                 value: /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,30}$/,
@@ -61,7 +61,7 @@ export default function ContactForm(){
                     </div>
                     <div role="group">
 
-                        <input type="email"  placeholder="Email" {...register("email", {
+                        <input type="email"  placeholder={dataForm.email} {...register("email", {
                             required: dataErrors.require,
                             pattern: {
                                 value: /^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$/,
@@ -73,7 +73,7 @@ export default function ContactForm(){
                     </div>
                     <div role="group">
 
-                        <input type="text"  placeholder="Téléphone" {...register("phone", {
+                        <input type="text"  placeholder={dataForm.phone} {...register("phone", {
                             required: dataErrors.require,
                             pattern: {
                                 value: /^(?:\+33\s?|0)[1-9](?:[\s.-]?\d{2}){4}$/,
@@ -92,7 +92,7 @@ export default function ContactForm(){
                 </fieldset>
                 <fieldset className={styles.message}>
 
-                    <textarea placeholder="Message" {...register("message", {
+                    <textarea placeholder={dataForm.message} {...register("message", {
                         required: dataErrors.require,
                         pattern: {
                             value: /^[^<>]{2,1000}$/,

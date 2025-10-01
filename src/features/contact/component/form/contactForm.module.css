@@ -6,14 +6,32 @@
     align-items: flex-start;
     margin-top: 15vh;
     background-color: black;
+    @media screen and (max-width: 568px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+
+
 }
 
 .form {
-
     color : var(--white-pure);
-    width: 25vw;
+    width: 35vw;
     font-family: var(--paragraph-font), sans-serif;
 
+    @media screen and (max-width: 568px) {
+        width: 90vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        width: 42vw;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        width: 42vw;
+
+    }
 }
 
 .form fieldset {
@@ -31,15 +49,44 @@
     font-family: var(--title-font2), sans-serif;
     color:  var(--beige-orange);
     margin-bottom: 0.5em;
+    @media screen and (max-width: 568px) {
+        margin-bottom: 0;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+
+        font-size: 4em;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        font-size: 4.5em;
+
+    }
 }
 
 .h3{
     text-align: left;
     font-size: 2em;
-    font-family: var(--title-font2), sans-serif;
+    font-family: var(--paragraph-font), sans-serif;
     color:  var(--white-pure);
-    width: 22vw;
+    width: 35vw;
     line-height: 2em;
+    @media screen and (max-width: 568px) {
+        width: 90vw;
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 5vh;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        width: 42vw;
+        font-size: 1.4em;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        width: 42vw;
+        font-size: 1.5em;
+
+    }
 }
 
 
@@ -65,14 +112,14 @@
     outline: none;
     background-color: black;
     border: none;
-    border-bottom: 2px solid var(--white-platinium);
+    border-bottom: 2px solid var(--white-pure);
 
     color: var(--white-pure);
     font-size: 1.4em;
 }
 
 .info div input::placeholder {
-    color : var(--white-pure);
+    color : var(--white-platinium);
 }
 
 .info div input:focus {
@@ -96,9 +143,9 @@
     border-color: var(--white-platinium);
     outline: none;
     border: none;
-    border-bottom: 2px solid var(--white-platinium);
+    border-bottom: 2px solid var(--white-pure);
     background-color: black;
-    color: var(--white-pure);
+    color : var(--white-pure);
     font-size: 1.4em;
 }
 
@@ -117,9 +164,9 @@
 .message textarea {
     height: 5vh;
     transition: border-color 0.2s ease-in-out;
-    border-color: var(--white-platinium);
-    outline: none;
     border: none;
+    border-bottom: 2px solid var(--white-pure);
+    outline: none;
     border-bottom: 2px solid var(--white-platinium);
     font-family: var(--paragraph-font), sans-serif;
     background-color: black;
@@ -133,17 +180,27 @@
 }
 
 .message textarea::placeholder {
-    color : var(--white-pure);
+    color : var(--white-platinium);
 }
 
 .button {
 
     margin : 2em 0;
-    padding : 1em 2em;
-    border-color: var(--white-pure);
-    color : var(--white-pure);
+    padding : 0.5em 1em;
+    border-color: var(--beige-orange);
+    color : var(--beige-orange);
     background-color: black;
     border-radius: 50px;
     font-family: var(--title-font2), sans-serif;
     font-size: 1.5em;
+
+    @media screen and (max-width: 568px) {
+        position : relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+    }
+
+
 }
