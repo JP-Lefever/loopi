@@ -1,9 +1,19 @@
+.section {
+    display: flex;
+    width: 100vw;
+    gap: 5vw;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 15vh;
+    background-color: black;
+}
+
 .form {
-    height: 90vh;
+
     color : var(--white-pure);
-    width: 60vw;
-    margin: auto;
+    width: 25vw;
     font-family: var(--paragraph-font), sans-serif;
+
 }
 
 .form fieldset {
@@ -15,11 +25,25 @@
 }
 
 .h2 {
-    text-align: center;
+
+    text-align: left;
     font-size: 6em;
     font-family: var(--title-font2), sans-serif;
-    color: var(--white-platinium);
+    color:  var(--beige-orange);
+    margin-bottom: 0.5em;
 }
+
+.h3{
+    text-align: left;
+    font-size: 2em;
+    font-family: var(--title-font2), sans-serif;
+    color:  var(--white-pure);
+    width: 22vw;
+    line-height: 2em;
+}
+
+
+
 
 .info {
     display: flex;
@@ -35,18 +59,25 @@
 
 .info div input {
     height: 5vh;
-    border-radius: 5px;
-    padding-left: 0.5em;
-    transition: all 0.2s ease-in-out;
+
+    transition: border-color 0.2s ease-in-out;
     border-color: var(--white-platinium);
     outline: none;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid var(--white-platinium);
 
+    color: var(--white-pure);
+    font-size: 1.4em;
+}
+
+.info div input::placeholder {
+    color : var(--white-pure);
 }
 
 .info div input:focus {
     border-color: var(--beige-orange);
-    box-shadow: 0 0 0 1px var(--beige-orange);
-    opacity: 90%;
+
 
 }
 
@@ -61,17 +92,19 @@
 .select {
     width: 100%;
     height: 5vh;
-    border-radius: 5px;
-    padding-left: 0.5em;
-    transition: all 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
     border-color: var(--white-platinium);
     outline: none;
+    border: none;
+    border-bottom: 2px solid var(--white-platinium);
+    background-color: black;
+    color: var(--white-pure);
+    font-size: 1.4em;
 }
 
 .select:focus {
     border-color: var(--beige-orange);
-    box-shadow: 0 0 0 2px var(--white-platinium);
-    opacity: 90%;
+
 }
 
 .message  {
@@ -82,25 +115,35 @@
 }
 
 .message textarea {
-    border-radius: 5px;
-    height: 10vh;
-    transition: all 0.2s ease-in-out;
+    height: 5vh;
+    transition: border-color 0.2s ease-in-out;
     border-color: var(--white-platinium);
     outline: none;
+    border: none;
+    border-bottom: 2px solid var(--white-platinium);
+    font-family: var(--paragraph-font), sans-serif;
+    background-color: black;
+    color: var(--white-pure);
+    font-size: 1.4em;
 }
 
 .message textarea:focus {
-    border-color: var(--white-platinium);
-    box-shadow: 0 0 0 2px var(--white-platinium);
-    opacity: 90%;
+    border-color:  var(--beige-orange);
+
+}
+
+.message textarea::placeholder {
+    color : var(--white-pure);
 }
 
 .button {
-    width: 100%;
+
     margin : 2em 0;
-    height: 5vh;
-    background-color: var(--beige-orange);
-    border-radius: 5px;
+    padding : 1em 2em;
+    border-color: var(--white-pure);
+    color : var(--white-pure);
+    background-color: black;
+    border-radius: 50px;
     font-family: var(--title-font2), sans-serif;
     font-size: 1.5em;
 }

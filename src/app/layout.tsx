@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={` ${paragraphFont.variable} ${subtitle.variable}`} id={"home"} >
+      <body className={` ${paragraphFont.variable} ${subtitle.variable}`}>
       <ToastContainer
           position="top-right"
           autoClose={3000}

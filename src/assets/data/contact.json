@@ -6,6 +6,8 @@
   "message" : "Message",
   "submit" : "Envoyer",
   "subjectLabel" : "Sujet",
+  "title" : "Contact",
+  "subtitle" : "Contact moi via ce formulaire ou au 07.81.96.64.96",
   "subject": [
     {
       "id" : 1,

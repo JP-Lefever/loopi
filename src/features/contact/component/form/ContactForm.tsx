@@ -28,13 +28,16 @@ export default function ContactForm(){
 
     return (
         <>
-        <section>
-            <h2 className={styles.h2}>{"Contact"}</h2>
+        <section className={styles.section}>
+            <div role={"group"}>
+                <h2 className={styles.h2}>{dataForm.title}</h2>
+                <h3 className={styles.h3}>{dataForm.subtitle}</h3>
+            </div>
             <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
                 <fieldset className={styles.info}>
                     <div role="group">
-                        <label htmlFor="firstName">{dataForm.firstName}</label>
-                        <input type="text"  placeholder="*************" {...register("firstName", {
+
+                        <input type="text"  placeholder="Prénom" {...register("firstName", {
                             required: dataErrors.require,
                             pattern : {
                                 value : /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,30}$/,
@@ -45,8 +48,8 @@ export default function ContactForm(){
                             <p>{errors.firstName?.message as string}</p>}
                     </div>
                     <div role="group">
-                        <label htmlFor="lastName">{dataForm.lastName}</label>
-                        <input type="text"  placeholder="*************" {...register("lastName", {
+
+                        <input type="text"  placeholder="Nom" {...register("lastName", {
                             required: dataErrors.require,
                             pattern: {
                                 value: /^[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,30}$/,
@@ -57,8 +60,8 @@ export default function ContactForm(){
                             <p>{errors.lastName?.message as string}</p>}
                     </div>
                     <div role="group">
-                        <label htmlFor="email">{dataForm.email}</label>
-                        <input type="email"  placeholder="*************" {...register("email", {
+
+                        <input type="email"  placeholder="Email" {...register("email", {
                             required: dataErrors.require,
                             pattern: {
                                 value: /^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$/,
@@ -69,8 +72,8 @@ export default function ContactForm(){
                             <p>{errors.email?.message as string}</p>}
                     </div>
                     <div role="group">
-                        <label htmlFor="phone">{dataForm.phone}</label>
-                        <input type="text"  placeholder="*************" {...register("phone", {
+
+                        <input type="text"  placeholder="Téléphone" {...register("phone", {
                             required: dataErrors.require,
                             pattern: {
                                 value: /^(?:\+33\s?|0)[1-9](?:[\s.-]?\d{2}){4}$/,
@@ -80,7 +83,7 @@ export default function ContactForm(){
                     </div>
                 </fieldset>
                 <fieldset className={styles.subject}>
-                    <label htmlFor="subject">{dataForm.subjectLabel}</label>
+
                     <select className={styles.select} {...register("subject")}>
                         {dataForm.subject.map(subject => (
                             <option key={subject.id} value={subject.label}>{subject.label}</option>
@@ -88,8 +91,8 @@ export default function ContactForm(){
                     </select>
                 </fieldset>
                 <fieldset className={styles.message}>
-                    <label htmlFor="message">{dataForm.message}</label>
-                    <textarea placeholder="*************" {...register("message", {
+
+                    <textarea placeholder="Message" {...register("message", {
                         required: dataErrors.require,
                         pattern: {
                             value: /^[^<>]{2,1000}$/,
