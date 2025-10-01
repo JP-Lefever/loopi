@@ -1,0 +1,24 @@
+.section {
+    background-color: black;
+    margin-top: -12vh;
+    padding-top: 4em;
+    overflow-x: hidden ;
+    min-height: 99vh;
+    @media screen and (max-width: 375px) {
+        margin-top: -24vh;
+
+    }
+    @media screen and (min-width: 375px) and (max-width: 568px) {
+        margin-top: -16vh;
+
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        margin-top: -15vh;
+
+    }
+
+
+}
+
+
+

@@ -3,45 +3,48 @@
 import styles from "./navBar.module.css"
 import Image from "next/image";
 import dataNav from "@/assets/data/navBar.json"
-import {useEffect, useState} from "react";
+import { useState} from "react";
 import clsx from "clsx";
+import { Equal, X  } from 'lucide-react';
 
 export default function NavBar() {
 
     const [activeSection, setActiveSection] = useState<string>("")
+    const [open, setOpen] = useState<boolean>(false);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveSection(`#${entry.target.id}`);
-                    }
-                });
-            },
-            {  rootMargin: "-40% 0px -40% 0px" }
-        );
+    const handleMenuOpen = () => {
+        setOpen(!open);
+    }
 
-        dataNav.forEach((item) => {
-            const element = document.querySelector(item.link);
-            if (element) observer.observe(element);
-        });
+    const handleNav  = ()=>{
 
-        return () => observer.disconnect();
-    }, []);
-
+    }
 
     return (
         <>
-            <nav className={styles.nav}>
+            <nav className={styles.nav} >
                 <figure className={styles.figure}>
                     <Image className={styles.image} src={"/images/loopi.png"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
                 </figure>
-                <ul>
+
+                <Equal className={styles.buttonMenu} onClick={handleMenuOpen} size={48} color={"white"}/>
+
+                <ul className={`${styles.menu} ${open ? styles.open : styles.close}`} >
+                    <div className={styles.div}>
+                        <figure className={styles.figure}>
+                            <Image className={styles.image} src={"/images/loopi.png"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
+                        </figure>
+                        <X className={styles.closeMenu} onClick={handleMenuOpen} size={48} color={"white"}/>
+                    </div>
                     {dataNav.map((item) => (
                         <li className={clsx(styles.link,{
                             [styles.active] : activeSection === item.link})} key={item.id}>
-                            <a href={item.link} onClick={()=> setActiveSection(item.link)} className={clsx(styles.link,{
+                            <a href={item.link}
+                               onClick={()=> {
+                                   setActiveSection(item.link)
+                                   setOpen(!open)
+                               }}
+                               className={clsx(styles.link,{
                                 [styles.active] : activeSection === item.link})} >{item.label}</a>
                         </li>
                     ))}

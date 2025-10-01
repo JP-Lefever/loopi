@@ -2,7 +2,7 @@
   {
     "id" : 1,
     "label" : "Accueil",
-    "link" : "#home"
+    "link" : "/"
   },
   {
     "id" : 6,
@@ -27,7 +27,7 @@
   {
     "id" : 4,
     "label" : "Un projet ?",
-    "link" : "#contact"
+    "link" : "/contact"
   }
 
 

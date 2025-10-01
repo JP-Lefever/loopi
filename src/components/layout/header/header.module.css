@@ -1,57 +1,76 @@
 .header {
     position: relative;
-    width: 100%;
-    min-height: 100vh;
+    width: 80vw;
+    min-height: 90vh;
     overflow: hidden;
+    margin : auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    background-color: var(--black-nuance);
-    font-family: var(--title-font2), sans-serif;
-    padding-top: 10vh;
+    align-items: center;
+
+
+    @media screen and  (max-width: 568px){
+        width: 90vw;
+        min-height: 80vh;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 90vw;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        min-height: 90vh;
+    }
 }
 
 
-.textBlock {
+.h1{
+    color : var(--white-platinium);
+    font-size : 6em;
+    font-family : var(--title-font2), sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 375px){
+        font-size : 2.5em;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 568px){
+        font-size : 3.5em;
+        text-align: center;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        font-size :4.5em;
+        text-align: center;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        text-align: center;
+    }
+}
+
+.videoWrapper{
     position: relative;
-    z-index: 2;
-    width: 50vw;
-    margin: 0 auto;
-    text-align: center;
-}
+    width: 45vw;
+    height: 50vh;
+    border-radius: 20px;
 
-
-.videoWrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60vw;
-    z-index: 1;
-
+    @media screen and  (max-width: 568px){
+        width: 90vw;
+        height: 32vh;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width: 85vw;
+        height: 42vh;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        width: 50vw;
+        height: 45vh;
+    }
 }
 
 .video {
-    width: 100%;
-    height: auto;
-    display: block;
     object-fit: cover;
-    border-radius: 8px;
-}
+    width: 100%;
+    height: 100%;
 
-
-.slogans {
-    font-size: 6vw;
-    color: var(--white-platinium);
-    margin: 0 0 1rem;
-}
-
-.slogans span {
-    color: var(--beige-orange);
-}
-
-.h3, .subtitle {
-    font-size: 6vw;
-    color: var(--white-platinium);
-    margin: 1rem 0;
 }

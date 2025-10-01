@@ -1,0 +1,6 @@
+{
+  "invalid" : "Caractères invalides",
+  "mail" : "Format email ou caractères invalies",
+  "tel" : "Format invalide",
+  "require" : "Champs requis"
+}

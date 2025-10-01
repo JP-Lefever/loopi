@@ -1,0 +1,29 @@
+{
+  "firstName" : "Prénom*",
+  "lastName" : "Nom*",
+  "email" : "Email*",
+  "phone" : "Téléphone*",
+  "message" : "Message*",
+  "submit" : "Envoyer",
+  "subjectLabel" : "Sujet",
+  "title" : "Contact",
+  "subtitle" : "Contact moi via ce formulaire ou au 07.81.96.64.96",
+  "subject": [
+    {
+      "id" : 1,
+      "label": "Création site vitrine"
+    },
+    {
+      "id" : 2,
+      "label": "Refonte de site"
+    },
+    {
+      "id" : 3,
+      "label": "Developpement sur mesure"
+    },
+    {
+      "id" : 4,
+      "label": "Autre"
+    }
+  ]
+}
