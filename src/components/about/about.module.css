@@ -1,49 +1,82 @@
 
 .aboutSection {
-    background-color: var(--black-nuance);
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: -20rem;
-    z-index: 2;
+    width: 90vw;
+    border: 1px solid var(--black-nuance);
+    border-radius : 10px;
+    background-color: var(--black-nuance);
+    margin: 10vh auto;
+    @media screen and (max-width: 568px){
+        width: 95vw;
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 568px){
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}
+
+
+.figure{
+    position: relative;
+    width: 10vw;
+    height: 10vh;
+    @media screen and (max-width: 568px){
+        width: 25vw;
+        height: 25vh;
+    }
+}
+
+.image {
+    object-fit: contain;
+    transform: rotate(20deg);
 }
 
 .h2 {
-    text-align: center;
     font-family: var(--title-font2), sans-serif;
     color : var(--white-platinium);
-    font-size: 12em;
-    font-weight: bold;
-    position: sticky;
-    top: 10vh;
-    z-index: 100;
-    width: fit-content;
-    margin: auto;
+    font-size: 6em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
+    @media screen and (max-width: 568px){
+        font-size: 2.5em;
+        position: relative;
+        left: 0;
+        transform: translateX(0);
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        font-size: 5em;
+
+    }
 }
 
-.h2sub {
-    text-align: center;
-    font-family: var(--title-font2), sans-serif;
-    color : var(--beige-orange);
-    font-size: 10em;
-    font-weight: bold;
-    z-index: 3;
-
-}
 
 .article {
-    font-family: var(--subtitle-font), sans-serif;
+    font-family: var(--paragraph-font), sans-serif;
     color : var(--white-platinium);
-    font-size: 2em;
-    width: 40vw;
-    position: relative;
-    left: 20vw;
-    margin: 0 auto ;
-    padding: 0 0 5vh 0;
-    line-height: 1.6em;
-    z-index: 4;
+    width: 80vw;
+    margin: auto;
+    padding :  5vh 0;
+    line-height: 1.8em;
+
+    @media screen and (max-width: 568px){
+        line-height: 1.4em;
+        width: 90vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        font-size: 1.2em;
+
+    }
 }
 
 .article strong {
