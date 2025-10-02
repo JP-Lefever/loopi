@@ -16,9 +16,6 @@ export default function NavBar() {
         setOpen(!open);
     }
 
-    const handleNav  = ()=>{
-
-    }
 
     return (
         <>
