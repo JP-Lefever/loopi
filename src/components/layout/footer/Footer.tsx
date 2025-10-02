@@ -27,7 +27,7 @@ export default function Footer(){
             <footer className={styles.footer}>
                 <section className={styles.container}>
                     <article className={styles.top}>
-                        <a href="/" className={styles.brand}>
+                        <Link href="/" className={styles.brand}>
                             <Image
                                 src="/images/loopi.png"
                                 width={128}
@@ -35,7 +35,7 @@ export default function Footer(){
                                 alt="Logo Loopi Web"
                                 className={styles.logo}
                             />
-                        </a>
+                        </Link>
 
                         <article>
                             <ul className={styles.navList}>
