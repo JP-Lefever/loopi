@@ -21,9 +21,11 @@ export default function NavBar() {
     return (
         <>
             <nav className={styles.nav} >
-                <figure className={styles.figure}>
-                    <Image className={styles.image} src={"/images/loopi.webp"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
-                </figure>
+                <Link href={"/"} >
+                    <figure className={styles.figure}>
+                        <Image className={styles.image} src={"/images/loopi.webp"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
+                    </figure>
+                </Link>
 
                 <Equal className={styles.buttonMenu} onClick={handleMenuOpen} size={48} color={"white"}/>
 
