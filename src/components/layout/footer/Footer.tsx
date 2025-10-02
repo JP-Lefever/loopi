@@ -29,7 +29,7 @@ export default function Footer(){
                     <article className={styles.top}>
                         <Link href="/" className={styles.brand}>
                             <Image
-                                src="/images/loopi.png"
+                                src="/images/loopi.webp"
                                 width={128}
                                 height={128}
                                 alt="Logo Loopi Web"
