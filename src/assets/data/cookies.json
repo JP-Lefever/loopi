@@ -1,0 +1,27 @@
+{
+  "intro" : {
+    "title" : "I. Introduction",
+    "content" : "Le site utilise des technologies minimales pour garantir son bon fonctionnement et mesurer son audience.\nNous ne déposons aucun cookie à des fins publicitaires ni de traçage individualisé. Cette politique explique quels types de cookies techniques peuvent être utilisés et comment nous traitons les données d’analyse anonymisées.\n"
+  },
+  "desc" : {
+    "title" : "II. Qu'est-ce qu'un cookie ?",
+    "content" : "Un cookie est un petit fichier texte enregistré sur votre appareil lorsque vous visitez un site web.\nCertains cookies sont strictement nécessaires au bon fonctionnement du site (ex. : authentification), tandis que d’autres sont utilisés à des fins d’analyse ou de publicité.\nDans notre cas, aucun cookie de suivi ou de mesure d’audience n’est utilisé.\n"
+  },
+  "utilisation" : {
+    "title" : "III. Utilisation sur ce site",
+    "content" : "**A. Cookies techniques essentiels**\nAnalyse d’audience :\nNous utilisons Vercel Web Analytics, un outil de mesure sans cookie, conforme au RGPD.\nCaractéristiques :\n•\tDonnées anonymisées (aucun identifiant personnel)\n•\tAucun cookie ni traceur tiers\n•\tAnalyse limitée à la session du jour\n•\tAucune reconstitution de parcours ou profilage\n",
+    "link" : "\uD83D\uDC49 Pour en savoir plus, vous pouvez consulter la politique de confidentialité de Vercel. "
+  },
+  "droit" : {
+    "title" : "IV. Vos droits",
+    "content" : "En vertu du Règlement Général sur la Protection des Données (RGPD), vous disposez de droits d’accès, de rectification, d’effacement, de limitation et d’opposition concernant vos données personnelles.\n⚠\uFE0F Cependant, ce site ne collecte ni ne stocke de données personnelles identifiables.\nPar conséquent, nous ne sommes pas en mesure d’identifier les visiteurs ou de répondre à des demandes liées à des données personnelles que nous ne possédons pas.\n"
+  },
+  "maj" : {
+    "title" : "V. Mise à jour",
+    "content" : "Cette politique peut être modifiée pour refléter les évolutions techniques ou juridiques.\nDernière mise à jour : 3 juillet 2025\n"
+  },
+  "contact" : {
+    "title" : "Contact",
+    "content" : "Pour toute question concernant cette politique, vous pouvez nous contacter à : jplef.dev@gmail.com"
+  }
+}

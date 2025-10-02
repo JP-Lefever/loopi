@@ -39,7 +39,7 @@ export default function Footer(){
 
                         <article>
                             <ul className={styles.navList}>
-                                <li><a href="#" className={styles.navLink}>Politique de confidentialité</a></li>
+                                <li><Link href="/cookies" className={styles.navLink}>Politique de confidentialité</Link></li>
                                 <li><a href="#" className={styles.navLink}>Mentions légales</a></li>
                                 <li><Link href="/contact" className={styles.navLink}>Contact</Link></li>
                             </ul>
