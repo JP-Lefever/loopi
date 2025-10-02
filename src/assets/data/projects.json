@@ -2,7 +2,7 @@
     {
       "id" : 5,
       "name" : "E.F.F.C.A",
-      "image" : "/images/projects/EFFCA.png",
+      "image" : "/images/projects/EFFCA.webp",
       "type" : "Voir le site",
       "synopsis" : "Site web pour le club de football du village de Fons",
       "web" : "https://effca.vercel.app/"
@@ -11,7 +11,7 @@
     {
       "id" : 4,
       "name" : "La Compagnie L'Enclos",
-      "image" : "/images/projects/enclos_v2.png",
+      "image" : "/images/projects/enclos_v2.webp",
       "type" : "Voir le site",
       "synopsis" : "Site web pour compagnie de théâtre professionnelle",
       "web" : "https://lenclos.vercel.app/"
@@ -20,7 +20,7 @@
     {
       "id" : 3,
       "name" : "Camping",
-      "image" : "/images/projects/camping.png",
+      "image" : "/images/projects/camping.webp",
       "type" : "Voir le site",
       "synopsis" : "Site vitrine pour camping/village vacances",
       "web" : "https://camping-seven-mu.vercel.app/"
