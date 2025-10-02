@@ -2,25 +2,25 @@
   {
     "id": 1,
     "name": " Analyse & Conseil",
-    "image": "/images/services/analyse.png",
+    "image": "/images/services/analyse.webp",
     "description": "Chez Loopi Web, on commence par discuter de votre projet. On échange sur votre entreprise, vos objectifs, vos valeurs et vos besoins pour définir la meileure stratégie et transformer vos idées en projet."
   },
   {
     "id": 2,
     "name": " Design & UX",
-    "image": "/images/services/ux.png",
+    "image": "/images/services/ux.webp",
     "description": "Nous transformons votre identité (couleurs, typographies, style graphique) en une maquette originale et personnalisée que vous pouvez visualiser et ajuster. Cela vous permet de vous projeter et de valider le style avant de passer au développement."
   },
   {
     "id": 3,
     "name": " Développement & référencement",
-    "image": "/images/services/dev.png",
+    "image": "/images/services/dev.webp",
     "description": "La magie commence et votre maquette prend vie : un site web fluide,  rapide et accessible sur tous les appareils. Chaque détail est pensé pour offrir une expérience agréable et optimisées à vos utilisateurs."
   },
   {
     "id": 4,
     "name": " Mise en production & Support",
-    "image": "/images/services/prod.png",
+    "image": "/images/services/prod.webp",
     "description": "Le site est mis en ligne et je reste à vos côtés pour tout ajustement, optimisation ou assistance. Votre site évolue avec votre projet, toujours prêt à refléter vos besoins et vos ambitions."
   }
 

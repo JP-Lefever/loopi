@@ -11,7 +11,7 @@ export default function About(){
                 <article className={styles.title}>
                     <h2 className={styles.h2}>{dataAbout.title}</h2>
                     <figure className={styles.figure}>
-                        <Image className={styles.image} src={"/images/lot.png"} alt={"logo oh my lot"} fill={true}/>
+                        <Image className={styles.image} src={"/images/lot.webp"} alt={"logo oh my lot"} fill={true}/>
                     </figure>
                 </article>
                 <article className={styles.article}>
