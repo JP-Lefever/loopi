@@ -49,7 +49,7 @@ export default function Footer(){
                     <hr className={styles.separator} />
 
                     <p className={styles.copy}>
-                        © 2025 <a href="/" className={styles.copyLink}>Loopi Web</a>. Tous droits réservés.
+                        © 2025 <Link href="/" className={styles.copyLink}>Loopi Web</Link>. Tous droits réservés.
                     </p>
                 </section>
             </footer>
