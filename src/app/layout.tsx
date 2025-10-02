@@ -7,6 +7,7 @@ import {paragraphFont, subtitle} from "@/components/ui/fonts";
 import NavBar from "@/components/layout/navBar/NavBar";
 import {ToastContainer} from "react-toastify";
 import Footer from "@/components/layout/footer/Footer";
+import Head from "next/head";
 
 
 export const metadata: Metadata = {
@@ -17,11 +18,12 @@ export const metadata: Metadata = {
     icons: {
         icon: "/images/loopi.webp",
     },
+    metadataBase: new URL("https://loopiweb.fr"),
     openGraph: {
         title: "Loopi Web | Création de site web sur-mesure",
         description:
-            "Création de site web professionnel près de Figeac. Design, développement, référencement et accompagnement.",
-        url: "#",
+            "Création de site web professionnel près de Figeac. Design, développement, référencement et accompagnement personnalisé.",
+        url: "https://loopiweb.fr",
         siteName: "Loopi Web",
         images: [
             {
@@ -34,11 +36,35 @@ export const metadata: Metadata = {
         locale: "fr_FR",
         type: "website",
     },
+    twitter: {
+        card: "summary_large_image",
+        title: "Loopi Web | Création de site web sur-mesure",
+        description:
+            "Création de site web professionnel près de Figeac. Design, développement, référencement et accompagnement personnalisé.",
+        images: ["/images/loopi.webp"],
+    },
     robots: {
         index: true,
         follow: true,
     },
-}
+    alternates: {
+        canonical: "https://loopiweb.fr",
+    },
+};
+
+const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Loopi Web",
+    "url": "https://loopiweb.fr",
+    "logo": "https://loopiweb.fr/images/loopi.webp",
+    "description": "Loopi Web crée des sites web modernes, rapides et personnalisés. Basé dans le Lot, près de Figeac. Accompagnement sur-mesure et référencement optimisé.",
+    "sameAs": [
+        "https://www.linkedin.com/in/tonprofil",
+        "https://github.com/tonprofil",
+        "https://twitter.com/tonprofil"
+    ]
+};
 
 export default function RootLayout({
   children,
@@ -48,6 +74,12 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={` ${paragraphFont.variable} ${subtitle.variable}`}>
+      <Head>
+          <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          />
+      </Head>
           <ToastContainer
               position="top-right"
               autoClose={3000}
