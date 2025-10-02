@@ -10,6 +10,9 @@
     @media screen and (min-width: 375px) and (max-width :568px) {
         margin-top : -16vh;
     }
+    @media screen and (min-width: 1024px) and (max-width : 1280px) {
+        margin-top : -15vh;
+    }
 }
 
 .div {

@@ -1,0 +1,42 @@
+{
+  "intro": {
+    "title": "I. Introduction",
+    "content": "Bienvenue sur le site officiel de Loopi Web. En accédant à ce site, vous acceptez les présentes mentions légales."
+  },
+  "infos_generales": {
+    "title": "II. Informations générales",
+    "content": "Nom du site : Loopi Web \nAdresse : 275 route des combes, 46100 Camburat\nEmail : jplef.dev@gmail.com\nResponsable de la publication : Lefever JP"
+  },
+  "hebergement": {
+    "title": "III. Hébergement et développement",
+    "content": "**Hébergeurs :**\n Vercel\n  Adresse : 440 N Barranca Avenue Suite 4133, Covina, CA 91723, États-Unis\n  Site web : https://vercel.com\n\n Railway\n  Adresse : 17 Battery Place, 8th Floor, New York, NY 10004, États-Unis\n  Site web : https://railway.app\n\n**Développeur** :\n Nom : Lefever JP\nTéléphone : 07 81 96 64 96\nSite web : https://jplef.fr"
+  },
+  "images": {
+    "title": "IV. Utilisation des images",
+    "content": "Le Club utilise potentiellement des images de personnes dans le cadre de ses activités et communications. Ces images sont publiées uniquement avec le consentement préalable des personnes concernées.\n\n **Finalités** :\n Illustrer les activités et projets de Loopi Web\n Promouvoir les services et initiatives\n Partager la vie du site avec ses utilisateurs\n\nLoopi Web s'engage à respecter la vie privée et les droits des personnes représentées."
+  },
+  "propriete_intellectuelle": {
+    "title": "V. Propriété intellectuelle",
+    "content": "Tous les contenus présents sur ce site, y compris images, textes, logos et vidéos, sont la propriété exclusive de Loopi Web ou sont utilisés avec autorisation. Toute reproduction, modification, ou diffusion partielle ou totale sans autorisation écrite préalable est interdite"
+  },
+  "responsabilite": {
+    "title": "VI. Limitation de responsabilité",
+    "content": "Loopi Web met tout en œuvre pour assurer l'exactitude des informations diffusées. Cependant, il ne peut garantir leur exhaustivité ou exactitude et décline toute responsabilité en cas d'erreurs ou omissions."
+  },
+  "liens_hypertextes": {
+    "title": "VII. Liens hypertextes",
+    "content": "CCe site peut contenir des liens vers des sites tiers (réseaux sociaux, partenaires, etc.). Loopi Web n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou aux conséquences de leur utilisation."
+  },
+  "modifications": {
+    "title": "VIII. Modifications des mentions légales",
+    "content": "Loopi Web se réserve le droit de modifier ces mentions légales à tout moment. Nous vous invitons à consulter régulièrement cette page pour prendre connaissance des mises à jour."
+  },
+  "cookies": {
+    "title": "IX. Politique de cookies",
+    "content": "Pour en savoir plus sur l'utilisation des cookies, veuillez consulter notre page dédiée à la politique de confidentialité."
+  },
+  "contact": {
+    "title": "X. Contact",
+    "content": "Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter à l'adresse suivante : jplef.dev@gmail.com"
+  }
+}
