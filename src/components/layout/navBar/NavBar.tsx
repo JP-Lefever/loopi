@@ -22,7 +22,7 @@ export default function NavBar() {
         <>
             <nav className={styles.nav} >
                 <figure className={styles.figure}>
-                    <Image className={styles.image} src={"/images/loopi.png"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
+                    <Image className={styles.image} src={"/images/loopi.webp"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
                 </figure>
 
                 <Equal className={styles.buttonMenu} onClick={handleMenuOpen} size={48} color={"white"}/>
@@ -30,7 +30,7 @@ export default function NavBar() {
                 <ul className={`${styles.menu} ${open ? styles.open : styles.close}`} >
                     <div className={styles.div}>
                         <figure className={styles.figure}>
-                            <Image className={styles.image} src={"/images/loopi.png"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
+                            <Image className={styles.image} src={"/images/loopi.webp"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
                         </figure>
                         <X className={styles.closeMenu} onClick={handleMenuOpen} size={48} color={"white"}/>
                     </div>
