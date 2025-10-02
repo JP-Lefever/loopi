@@ -6,6 +6,7 @@ import dataNav from "@/assets/data/navBar.json"
 import { useState} from "react";
 import clsx from "clsx";
 import { Equal, X  } from 'lucide-react';
+import Link from "next/link";
 
 export default function NavBar() {
 
@@ -36,13 +37,13 @@ export default function NavBar() {
                     {dataNav.map((item) => (
                         <li className={clsx(styles.link,{
                             [styles.active] : activeSection === item.link})} key={item.id}>
-                            <a href={item.link}
+                            <Link href={item.link}
                                onClick={()=> {
                                    setActiveSection(item.link)
                                    setOpen(!open)
                                }}
                                className={clsx(styles.link,{
-                                [styles.active] : activeSection === item.link})} >{item.label}</a>
+                                [styles.active] : activeSection === item.link})} >{item.label}</Link>
                         </li>
                     ))}
                 </ul>
