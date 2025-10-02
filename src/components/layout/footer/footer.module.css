@@ -1,0 +1,139 @@
+.footer {
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        min-height: 30vh;
+    }
+
+}
+
+.container {
+    width: 100%;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 1em;
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        max-width: 90vw;
+    }
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    @media (max-width: 568px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+    }
+}
+
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.75em;
+}
+
+
+
+
+.navList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @media (max-width: 568px) {
+        justify-content: center;
+
+    }
+}
+
+.navLink {
+    color: var(--white-pure);
+    text-decoration: none;
+    font-family: var(--title-font2), sans-serif;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color : var(--beige-orange)
+}
+
+.separator {
+    margin: 1.5em auto;
+    border: none;
+    border-top: 1px solid var(--white-pure);
+}
+
+.copy {
+    text-align: center;
+    color: var(--white-pure);
+    font-family: var(--title-font2), sans-serif;
+}
+
+.copyLink {
+    text-decoration: none;
+    color: var(--beige-orange);
+}
+
+.copyLink:hover {
+    text-decoration: underline;
+}
+
+
+.marque {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: black;
+    border-top: 2px solid var(--white-pure);
+    border-bottom: 2px solid var(--white-pure);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    color: var(--white-pure);
+    margin-top: 5vh;
+}
+
+.track {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scroll 90s linear infinite;
+    font-family: var(--paragraph-font), sans-serif;
+    font-size: 1.8em;
+}
+
+.track p {
+    padding-right: 1em;
+}
+
+
+.marque:hover {
+    background: var(--white-pure);
+    color: var(--black-nuance);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
