@@ -53,15 +53,25 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Loopi Web",
-    "url": "https://loopiweb.fr",
-    "logo": "https://loopiweb.fr/images/loopi.webp",
-    "description": "Loopi Web crée des sites web modernes, rapides et personnalisés. Basé dans le Lot, près de Figeac. Accompagnement sur-mesure et référencement optimisé.",
-    "sameAs": [
+    "@type": "LocalBusiness",
+    name: "Loopi Web",
+    image: "https://loopiweb.fr/images/loopi.webp",
+    url: "https://loopiweb.fr",
+    logo: "https://loopiweb.fr/images/loopi.webp",
+    description:
+        "Loopi Web crée des sites web modernes, rapides et personnalisés. Basé dans le Lot, près de Figeac. Accompagnement sur-mesure et référencement optimisé.",
+    address: {
+        "@type": "PostalAddress",
+        streetAddress: "275 route des combes",
+        addressLocality: "Camburat",
+        postalCode: "46100",
+        addressCountry: "FR",
+    },
+    telephone: "+33 7 81 96 64 96",
+    sameAs: [
         "https://www.facebook.com/profile.php?id=61581724560317",
         "https://github.com/JP-Lefever",
-    ]
+    ],
 };
 
 export default function RootLayout({
@@ -71,11 +81,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+
+
       <body className={` ${paragraphFont.variable} ${subtitle.variable}`}>
-          <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-          />
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(localBusinessSchema),
+                }}
+            />
           <ToastContainer
               position="top-right"
               autoClose={3000}
