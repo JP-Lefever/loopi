@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-
 import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import React from "react";
@@ -7,7 +6,7 @@ import {paragraphFont, subtitle} from "@/components/ui/fonts";
 import NavBar from "@/components/layout/navBar/NavBar";
 import {ToastContainer} from "react-toastify";
 import Footer from "@/components/layout/footer/Footer";
-import Head from "next/head";
+
 
 
 export const metadata: Metadata = {
@@ -54,15 +53,14 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
+    "@type": "Organization",
     "name": "Loopi Web",
     "url": "https://loopiweb.fr",
     "logo": "https://loopiweb.fr/images/loopi.webp",
     "description": "Loopi Web crée des sites web modernes, rapides et personnalisés. Basé dans le Lot, près de Figeac. Accompagnement sur-mesure et référencement optimisé.",
     "sameAs": [
-        "https://www.linkedin.com/in/tonprofil",
-        "https://github.com/tonprofil",
-        "https://twitter.com/tonprofil"
+        "https://www.facebook.com/profile.php?id=61581724560317",
+        "https://github.com/JP-Lefever",
     ]
 };
 
@@ -74,12 +72,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={` ${paragraphFont.variable} ${subtitle.variable}`}>
-      <Head>
           <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
           />
-      </Head>
           <ToastContainer
               position="top-right"
               autoClose={3000}
