@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         "Loopi Web crée des sites modernes, rapides et personnalisés. Basé dans le Lot, près de Figeac. Accompagnement sur-mesure et référencement optimisé.",
     keywords: ["création site web", "développeur web Lot", "site vitrine", "Figeac", "Loopi Web"],
     icons: {
-        icon: "/images/loopi.webp",
+        icon: "/images/loopi.png",
     },
     metadataBase: new URL("https://loopiweb.fr"),
     openGraph: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         siteName: "Loopi Web",
         images: [
             {
-                url: "/images/loopi.webp",
+                url: "/images/loopi.png",
                 width: 1200,
                 height: 630,
                 alt: "Loopi Web - Création de site internet",
@@ -55,9 +55,9 @@ const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Loopi Web",
-    image: "https://loopiweb.fr/images/loopi.webp",
+    image: "https://loopiweb.fr/images/loopi.png",
     url: "https://loopiweb.fr",
-    logo: "https://loopiweb.fr/images/loopi.webp",
+    logo: "https://loopiweb.fr/images/loopi.png",
     description:
         "Loopi Web crée des sites web modernes, rapides et personnalisés. Basé dans le Lot, près de Figeac. Accompagnement sur-mesure et référencement optimisé.",
     address: {
