@@ -77,7 +77,6 @@
         width: 100vw;
         height: 100vh;
         transition: top 0.4s ease-in-out;
-        gap: 0.5em;
         background: black;
         text-align: center;
         font-size: 1.1em;
