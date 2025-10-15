@@ -14,6 +14,7 @@ export default function NavBar() {
     const [open, setOpen] = useState<boolean>(false);
 
     const handleMenuOpen = () => {
+        document.body.style.overflow = open ? "auto" : "hidden";
         setOpen(!open);
     }
 

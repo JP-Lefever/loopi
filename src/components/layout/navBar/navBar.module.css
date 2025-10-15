@@ -72,12 +72,12 @@
     @media screen and (max-width: 375px) {
         flex-direction: column;
         position: absolute;
-        top: 0;
+        top: -100vh;
         left: 0;
         width: 100vw;
         height: 100vh;
-        transition: transform 0.4s ease-in-out;
-        transform : translateY(-110vh);
+        transition: top 0.4s ease-in-out;
+        gap: 0.5em;
         background: black;
         text-align: center;
         font-size: 1.1em;
@@ -85,12 +85,11 @@
     @media screen and (min-width: 375px) and (max-width: 568px) {
         flex-direction: column;
         position: absolute;
-        top: 0;
+        top: -100vh;
         left: 0;
         width: 100vw;
         height: 100vh;
-        transition: transform 0.4s ease-in-out;
-        transform : translateY(-100vh);
+        transition: top 0.4s ease-in-out;
         background: black;
         gap: 1em;
         text-align: center;
@@ -102,7 +101,7 @@
 .menu.open {
     @media screen and (max-width: 568px) {
         display: flex;
-        transform : translateY(0);
+        top : 0;
         overflow: hidden;
     }
 
