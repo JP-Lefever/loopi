@@ -147,6 +147,9 @@
     background-color: black;
     color : var(--white-pure);
     font-size: 1.4em;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
 }
 
 .select:focus {
