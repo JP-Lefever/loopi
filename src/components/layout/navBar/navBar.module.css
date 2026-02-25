@@ -108,7 +108,7 @@
         display: flex;
         top : 0;
         overflow: hidden;
-        pointer-events: auto;   /* réactive les clics */
+        pointer-events: auto;
         opacity: 1;
     }
 
