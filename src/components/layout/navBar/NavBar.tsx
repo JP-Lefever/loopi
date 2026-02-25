@@ -14,7 +14,6 @@ export default function NavBar() {
     const [open, setOpen] = useState<boolean>(false);
 
     const handleMenuOpen = () => {
-        document.body.style.overflow = open ? "auto" : "hidden";
         setOpen(!open);
     }
 
@@ -33,7 +32,7 @@ export default function NavBar() {
                 <ul className={`${styles.menu} ${open ? styles.open : styles.close}`} >
                     <div className={styles.div}>
                         <figure className={styles.figure}>
-                            <Image className={styles.image} src={"/images/loopi.webp"} width={120} height={120} alt={"logo entreprise, gobelet de café pc à la main, casque a la tete, avec inscrit le nom de l'entreprise web & moka"}/>
+                            <Image className={styles.image} src={"/images/loopi.webp"} width={120} height={120} alt={"logo entreprise Loopi Web"}/>
                         </figure>
                         <X className={styles.closeMenu} onClick={handleMenuOpen} size={48} color={"white"}/>
                     </div>
