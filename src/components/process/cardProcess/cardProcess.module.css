@@ -10,7 +10,7 @@
 
 
     @media screen and (max-width: 375px){
-        min-height: 110vh;
+        min-height: fit-content;
         width: 90vw;
         margin : 0;
 
@@ -57,6 +57,7 @@
     @media screen and (max-width: 568px){
         width: 80vw;
         padding : 10px;
+        min-height: fit-content;
     }
     @media screen and (min-width: 568px) and (max-width: 1024px){
         width: 43vw;
