@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    height: 80vh;
+    min-height: 80vh;
     width: 23vw;
     background-color: var(--blue-coin);
     transition: transform 0.3s ease-in-out;
