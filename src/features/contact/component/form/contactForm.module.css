@@ -105,7 +105,7 @@
 }
 
 .info div input {
-    height: 5vh;
+    min-height: 5vh;
 
     transition: border-color 0.2s ease-in-out;
     border-color: var(--white-platinium);
@@ -138,7 +138,7 @@
 
 .select {
     width: 100%;
-    height: 5vh;
+    min-height: 5vh;
     transition: border-color 0.2s ease-in-out;
     border-color: var(--white-platinium);
     outline: none;
@@ -162,7 +162,7 @@
 }
 
 .message textarea {
-    height: 5vh;
+    min-height: 5vh;
     transition: border-color 0.2s ease-in-out;
     border: none;
     border-bottom: 2px solid var(--white-pure);
