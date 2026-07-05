@@ -10,12 +10,15 @@ export default function About(){
             <section className={styles.aboutSection}>
                 <article className={styles.title}>
                     <h2 className={styles.h2}>{dataAbout.title}</h2>
-                    <figure className={styles.figure}>
-                        <Image className={styles.image} src={"/images/lot.webp"} alt={"logo oh my lot"} fill={true}/>
-                    </figure>
                 </article>
                 <article className={styles.article}>
                     <ReactMarkdown>{dataAbout.description}</ReactMarkdown>
+                </article>
+                <article className={styles.article}>
+                    <ReactMarkdown>{dataAbout.description2}</ReactMarkdown>
+                </article>
+                <article className={styles.article}>
+                    <ReactMarkdown>{dataAbout.description3}</ReactMarkdown>
                 </article>
             </section>
         </>
