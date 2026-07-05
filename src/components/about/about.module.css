@@ -26,12 +26,13 @@
 }
 
 .article {
-    font-family: var(--title-font), sans-serif;
-    color : var(--white-platinium);
+    font-family: var(--title-font3), sans-serif;
+    font-weight: 400;
+    color : var(--white-pure);
     width: 40vw;
     margin: auto;
     padding :  3vh 0;
-    line-height: 1.2em;
+    line-height: 1.4em;
     font-size: 1.8em;
     @media screen and (max-width: 568px){
         line-height: 1.4em;
