@@ -1,9 +1,9 @@
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width : 80vw;
+    max-width : 90vw;
     margin : auto;
     position: sticky;
     top: 0;
