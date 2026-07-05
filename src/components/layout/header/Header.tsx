@@ -16,18 +16,6 @@ export default function Header() {
                 <h1 className={styles.h1b}>{dataHeader.subTitle}</h1>
                 <h2 className={styles.subtitle}>{dataHeader.description}</h2>
             </article>
-            {/*<TiltCard>*/}
-            {/*    <div className={styles.videoWrapper}>*/}
-            {/*        <video*/}
-            {/*            className={styles.video}*/}
-            {/*            src="/videos/head.mp4"*/}
-            {/*            autoPlay*/}
-            {/*            loop*/}
-            {/*            muted*/}
-            {/*            playsInline*/}
-            {/*        />*/}
-            {/*    </div>*/}
-            {/*</TiltCard>*/}
         </header>
     )
 }

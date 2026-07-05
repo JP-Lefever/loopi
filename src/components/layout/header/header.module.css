@@ -70,14 +70,14 @@
 }
 
 .subtitle{
-    font-family: var(--title-font3 ), sans-serif;
+    font-family: var(--title-font2 ), sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 3vh;
     gap: 16px;
     letter-spacing: 0.025em;
-    color : #a19d9d;
+    color : var(--grey-davy);
     @media screen and (max-width: 375px){
         font-size : 2.5em;
         text-align: center;

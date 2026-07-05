@@ -28,7 +28,7 @@
   --beige-orange : #fad402;
   --white-platinium : #DDE2E4;
   --white-pure : #ffffff;
-  --grey-davy : #535A64;
+  --grey-davy : #AFAFAF;
   --blue-coin : #181E29;
   --red : #E55139;
   --title-size : 4em;
@@ -44,15 +44,6 @@ body{
   margin: 0;
   color: white;
 }
-
-/*@keyframes gradientAnimation {*/
-/*  0%   { background-color: #C6A32A; }*/
-/*  20%  { background-color: #000000; }*/
-/*  40%  { background-color: #6277B6; }*/
-/*  60%  { background-color: #C69E2F; }*/
-/*  80%  { background-color: #070E07 }*/
-/*  100% { background-color: #C5844A }*/
-/*}*/
 
 
 
