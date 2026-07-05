@@ -15,6 +15,7 @@ export type ProjectProps = {
     type: string;
     synopsis: string;
     web: string;
+    year : string;
 }
 
 export type CostServicesProps = {
