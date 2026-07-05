@@ -3,6 +3,18 @@
   font-family: 'neue';
   src: url('/fonts/NeueBold.ttf');
 }
+@font-face {
+  font-family: 'SFB';
+  src: url('/fonts/SFB.OTF');
+}
+@font-face {
+  font-family: 'SFR';
+  src: url('/fonts/SFR.OTF');
+}
+@font-face {
+  font-family: 'CD';
+  src: url('/fonts/ClashDisplay.ttf');
+}
 
 
 *{
@@ -13,28 +25,24 @@
 }
 
 :root{
-  --beige-orange : #FCD946;
+  --beige-orange : #fad402;
   --white-platinium : #DDE2E4;
   --white-pure : #ffffff;
-  --grey-davy : #535A64;
+  --grey-davy : #AFAFAF;
   --blue-coin : #181E29;
   --red : #E55139;
   --title-size : 4em;
   --black-nuance : #161616;
   --title-font2 : "neue", sans-serif;
+  --title-font : "SFB", sans-serif;
+  --title-font3 : "SFR", sans-serif ;
+  --title-font4 : "CD", sans-serif ;
+  --scroll-light: 0;
 }
 
 body{
-  animation: gradientAnimation 24s ease infinite;
-}
-
-@keyframes gradientAnimation {
-  0%   { background-color: #C6A32A; }
-  20%  { background-color: #000000; }
-  40%  { background-color: #6277B6; }
-  60%  { background-color: #C69E2F; }
-  80%  { background-color: #070E07 }
-  100% { background-color: #C5844A }
+  margin: 0;
+  color: white;
 }
 
 

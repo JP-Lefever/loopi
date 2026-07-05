@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import React from "react";
-import {paragraphFont, subtitle} from "@/components/ui/fonts";
+import {paragraphFont, subtitle, title, text} from "@/components/ui/fonts";
 import NavBar from "@/components/layout/navBar/NavBar";
 import {ToastContainer} from "react-toastify";
 import Footer from "@/components/layout/footer/Footer";
+import Background from "@/components/ui/backgound/Background";
+import ScrollLight from "@/components/ui/ScrollLight/ScrollLight";
+
 
 
 
@@ -79,11 +82,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="fr">
 
 
-      <body className={` ${paragraphFont.variable} ${subtitle.variable}`}>
+      <body className={` ${paragraphFont.variable} ${subtitle.variable} ${title.variable} ${text.variable}`}>
 
             <script
                 type="application/ld+json"
@@ -91,6 +96,8 @@ export default function RootLayout({
                     __html: JSON.stringify(localBusinessSchema),
                 }}
             />
+            <Background/>
+            <ScrollLight/>
           <ToastContainer
               position="top-right"
               autoClose={3000}
