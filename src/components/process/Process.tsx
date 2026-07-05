@@ -31,7 +31,7 @@ export default function Process() {
 
                 // SPEED_MULTIPLIER > 1 = le défilement horizontal va plus vite
                 // que le scroll vertical (il "rattrape" avant la fin de la section).
-                const SPEED_MULTIPLIER = 2
+                const SPEED_MULTIPLIER = 1.6
 
                 let p = (scrolled / scrollableDistance) * SPEED_MULTIPLIER
                 p = Math.min(Math.max(p, 0), 1)

@@ -1,156 +1,92 @@
-.sectionCard{
-    position: relative;
-    width : fit-content;
-    margin : auto;
-    min-height: 70vh;
-    cursor:pointer;
+.sectionCard {
     text-decoration: none;
-
 }
 
-.figure {
-    position: relative;
-    width: 20vw;
-    height: 50vh;
+
+/* remplace ton ancien .image { display: none } / :hover .image { display: block } */
+.imageWrapper {
+    position: fixed;
+    z-index: 50;
+    pointer-events: none;
+    transform: translate(20em, -50%) scale(0.9);
+    border-radius: 6px;
     overflow: hidden;
-    border-radius: 30px;
-    @media screen and (max-width: 568px){
-        width: 90vw;
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
-        width: 43vw;
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1280px){
-        width: 24vw;
+    transition: opacity 0.25s ease, transform 0.25s ease;
 
+    @media screen and (max-width: 768px) {
+        display: none;
     }
+}
 
-
+.sectionCard:hover .imageWrapper {
+    transform: translate(1&0em, -50%) scale(1);
 }
 
 .image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 30px;
-    transition: transform 0.7s ease-in-out;
 }
 
-.image:hover {
-
-    transform: scale(1.1);
-}
-
-.sectionLink{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    width:20vw;
-    padding : 1vh 1vw;
-    align-items: center;
-    @media screen and (max-width: 568px){
-        width: 90vw;
-
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
-        width: 43vw;
-
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1280px){
-        width: 24vw;
-
-
-    }
-
-}
-
-.type {
-    border-radius: 10px;
-    background-color: var(--black-nuance);
-    font-family: var(--title-font2), sans-serif;
-    padding: 0.2vh 0.3vw;
-    color: var(--white-pure);
-    @media screen and (max-width: 568px){
-        padding: 0.5vh 1vw;
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
-        padding: 0.5vh 1vw;
-
-    }
-
-}
-.sectionCard .type {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: transform .3s ease-in-out;
-
-}
-.sectionCard:hover  .type{
-    opacity: 1;
-    transform: translateY(0);
-
-}
-
-.sectionCard .arrow{
-    background-color: var(--black-nuance);
-    border-radius: 50%;
-    color: var(--white-platinium);
-    transform: rotate(0deg);
-    transition: transform .3s ease-in-out;
-
-}
-
-.sectionCard:hover .arrow{
-    color: var(--beige-orange);
-    transform: rotate(-45deg);
-
-}
-
-.sectionInfo{
-    padding : 0.2em 0.2em;
+.sectionInfo {
+    width: 70vw;
+    display: grid;
+    height: 10vh;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.2em 0.2em;
     color: var(--white-pure);
     font-weight: bold;
-    width: 19vw;
+    border-bottom: 1px solid white;
+    opacity: 80%;
 }
 
-.h2{
+.h2 {
     font-size: 2em;
     letter-spacing: 0.1em;
+    font-family: var(--title-font), sans-serif;
+    text-align: left;
     width: 20vw;
-    font-family: var(--title-font2), sans-serif;
-    color: var(--beige-orange);
-    @media screen and (max-width: 568px){
+    @media screen and (max-width: 568px) {
         width: 90vw;
-
     }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
         width: 43vw;
-
     }
-    @media screen and (min-width: 1024px) and (max-width: 1280px){
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
         width: 24vw;
-
-
     }
 }
 
-.syno{
+.syno {
     font-size: 1.5em;
     letter-spacing: 0.1em;
-    width: 20vw;
-    font-family: var(--title-font2), sans-serif;
+    font-family: var(--title-font3), sans-serif;
     font-weight: lighter;
-
-    @media screen and (max-width: 568px){
+    text-align: left;
+    @media screen and (max-width: 568px) {
         width: 90vw;
-
     }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
         width: 45vw;
-
     }
-    @media screen and (min-width: 1024px) and (max-width: 1280px){
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
         width: 23vw;
+    }
+}
 
+.year {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-family: var(--title-font), sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    @media screen and (max-width: 568px) {
+        width: 90vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        width: 45vw;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        width: 23vw;
     }
 }

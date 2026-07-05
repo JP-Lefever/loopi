@@ -9,14 +9,13 @@ export default function Works() {
 
     return (
         <>
-        <section className={styles.section}>
-            <h2 className={styles.h2}>{"Dernières réalisations"}</h2>
+
             <article className={styles.sectionProject}>
                 {data.map((project : ProjectProps) => (
                     <CardProject key={project.id} dataProject={project}/>
                 ))}
             </article>
-        </section>
+
         </>
     )
 }
