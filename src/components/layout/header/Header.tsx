@@ -12,20 +12,22 @@ export default function Header() {
     return (
         <header  className={styles.header}>
             <article>
-                <h1 className={styles.h1}>{dataHeader.description}</h1>
+                <h1 className={styles.h1}>{dataHeader.title}</h1>
+                <h1 className={styles.h1b}>{dataHeader.subTitle}</h1>
+                <h2 className={styles.subtitle}>{dataHeader.description}</h2>
             </article>
-            <TiltCard>
-                <div className={styles.videoWrapper}>
-                    <video
-                        className={styles.video}
-                        src="/videos/head.mp4"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                    />
-                </div>
-            </TiltCard>
+            {/*<TiltCard>*/}
+            {/*    <div className={styles.videoWrapper}>*/}
+            {/*        <video*/}
+            {/*            className={styles.video}*/}
+            {/*            src="/videos/head.mp4"*/}
+            {/*            autoPlay*/}
+            {/*            loop*/}
+            {/*            muted*/}
+            {/*            playsInline*/}
+            {/*        />*/}
+            {/*    </div>*/}
+            {/*</TiltCard>*/}
         </header>
     )
 }

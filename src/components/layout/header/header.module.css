@@ -1,14 +1,12 @@
 .header {
     position: relative;
     width: 80vw;
-    min-height: 90vh;
+    min-height: 80vh;
     overflow: hidden;
-    margin : auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    margin-left : 5vw;
+    margin-top: 10vh;
 
     @media screen and  (max-width: 568px){
         width: 90vw;
@@ -24,11 +22,34 @@
 
 
 .h1{
+    font-family: var(--title-font4), sans-serif;
+    line-height: 0.95;
     color : var(--white-platinium);
-    font-size : 6em;
-    font-family : var(--title-font2), sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-size : 10em;
+    @media screen and (max-width: 375px){
+        font-size : 2.5em;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 568px){
+        font-size : 3.5em;
+        text-align: center;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        font-size :4.5em;
+        text-align: center;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        text-align: center;
+    }
+}
+.h1b{
+
+    color : var(--beige-orange);
+    font-size : 10em;
+    font-family: var(--title-font4), sans-serif;
+    letter-spacing: 0.025em;
+    line-height: 0.85;
 
     @media screen and (max-width: 375px){
         font-size : 2.5em;
@@ -46,6 +67,39 @@
     @media screen and (min-width: 1024px) and (max-width: 1280px){
         text-align: center;
     }
+}
+
+.subtitle{
+    font-family: var(--title-font3 ), sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3vh;
+    gap: 16px;
+    letter-spacing: 0.025em;
+    @media screen and (max-width: 375px){
+        font-size : 2.5em;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 568px){
+        font-size : 3.5em;
+        text-align: center;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        font-size :4.5em;
+        text-align: center;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        text-align: center;
+    }
+}
+
+.subtitle::before {
+    content: "";
+    width: 64px;
+    height: 2px;
+    background: var(--beige-orange);
 }
 
 .videoWrapper{
