@@ -130,3 +130,21 @@
     height: 100%;
 
 }
+
+.article {
+    width : fit-content;
+    margin : auto;
+    animation: bounceDown 1s ease-in-out infinite;
+    color : var(--beige-orange);
+}
+
+@keyframes bounceDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}

@@ -19,7 +19,7 @@
 }
 
 .sectionCard:hover .imageWrapper {
-    transform: translate(1&0em, -50%) scale(1);
+    transform: translate(10em, -50%) scale(1);
 }
 
 .image {
