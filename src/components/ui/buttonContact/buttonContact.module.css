@@ -1,0 +1,76 @@
+.button {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 15vh auto;
+}
+
+.bubbles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+/* Pivot invisible au centre, qui tourne en continu */
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: rotate(var(--angle));
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(var(--angle));
+    }
+    to {
+        transform: rotate(calc(var(--angle) + var(--spin)));
+    }
+}
+
+/* La bulle est décalée horizontalement du pivot : en tournant, elle trace un cercle */
+.bubble {
+    position: absolute;
+    top: 0;
+    background: #f7f6f0;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+}
+
+.circle {
+    position: relative;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: var(--white-pure);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--title-font), sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: black;
+    pointer-events: none;
+}

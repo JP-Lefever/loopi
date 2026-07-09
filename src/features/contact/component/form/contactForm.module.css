@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 15vh;
-    background-color: black;
+
     @media screen and (max-width: 568px) {
         display: flex;
         flex-direction: column;
@@ -110,7 +110,7 @@
     transition: border-color 0.2s ease-in-out;
     border-color: var(--white-platinium);
     outline: none;
-    background-color: black;
+    background-color: transparent;
     border: none;
     border-bottom: 2px solid var(--white-pure);
 
@@ -144,7 +144,7 @@
     outline: none;
     border: none;
     border-bottom: 2px solid var(--white-pure);
-    background-color: black;
+    background-color: transparent;
     color : var(--white-pure);
     font-size: 1.4em;
     -webkit-appearance: none;
@@ -172,7 +172,7 @@
     outline: none;
     border-bottom: 2px solid var(--white-platinium);
     font-family: var(--paragraph-font), sans-serif;
-    background-color: black;
+    background-color: transparent;
     color: var(--white-pure);
     font-size: 1.4em;
 }
