@@ -156,6 +156,10 @@
     border-color: var(--beige-orange);
 
 }
+.select option {
+    background-color: var(--black-nuance);
+    color: var(--white-pure);
+}
 
 .message  {
     display: flex;
@@ -190,9 +194,10 @@
 
     margin : 2em 0;
     padding : 0.5em 1em;
-    border-color: var(--beige-orange);
-    color : var(--beige-orange);
-    background-color: black;
+    border-color:  var(--white-pure);
+    cursor: pointer;
+    color :  var(--beige-orange);
+    background-color: transparent;
     border-radius: 50px;
     font-family: var(--title-font2), sans-serif;
     font-size: 1.5em;
@@ -206,4 +211,18 @@
     }
 
 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: var(--white-pure) !important;
+    caret-color: var(--white-pure);
+
+    -webkit-background-clip: text;
+
+    transition: background-color 5000s ease-in-out 0s;
 }

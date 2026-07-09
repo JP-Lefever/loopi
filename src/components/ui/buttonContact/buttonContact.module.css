@@ -61,6 +61,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform ease-in-out 0.2s;
+}
+
+.circle:hover {
+    transform: scale(1.05);
+
 }
 
 .label {
@@ -73,4 +79,8 @@
     letter-spacing: 0.02em;
     color: black;
     pointer-events: none;
+}
+
+.circle:hover .label {
+    color : var(--beige-orange)
 }
