@@ -17,22 +17,22 @@
     font-size: 3em;
     line-height: 1.25;
     max-width: 35vw;
-    margin: 0 0 2em 1em;
+    margin: 0 0 2em 2.5em;
     color: var(--white-pure);
 }
 
 /* "TARIFS" e */
-.h1::before {
-    content: "Tarifs";
-    display: block;
-    text-transform: uppercase;
-    font-family: "Inter", sans-serif;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    color: #e0b656;
-    margin-bottom: 1rem;
-}
+/*.h1::before {*/
+/*    content: "Tarifs";*/
+/*    display: block;*/
+/*    text-transform: uppercase;*/
+/*    font-family: "Inter", sans-serif;*/
+/*    font-size: 0.75rem;*/
+/*    font-weight: 600;*/
+/*    letter-spacing: 0.15em;*/
+/*    color: #e0b656;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
 
 /*Cards  */
 
@@ -72,22 +72,22 @@
     z-index: 1;            /* pour qu'elle passe visuellement au-dessus si jamais ça chevauche */
 }
 
-.article:nth-child(2)::after {
-    content: "Recommandé";
-    position: absolute;
-    top: -13px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--beige-orange);
-    color: #14120f;
-    font-size: 0.7em;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 5px 14px;
-    border-radius: 6px;
-    white-space: nowrap;
-}
+/*.article:nth-child(2)::after {*/
+/*    content: "Recommandé";*/
+/*    position: absolute;*/
+/*    top: -13px;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    background: var(--beige-orange);*/
+/*    color: #14120f;*/
+/*    font-size: 0.7em;*/
+/*    font-weight: 700;*/
+/*    letter-spacing: 0.08em;*/
+/*    text-transform: uppercase;*/
+/*    padding: 5px 14px;*/
+/*    border-radius: 6px;*/
+/*    white-space: nowrap;*/
+/*}*/
 
 /* Card title */
 

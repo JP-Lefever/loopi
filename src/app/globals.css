@@ -38,6 +38,7 @@
   --title-font3 : "SFR", sans-serif ;
   --title-font4 : "CD", sans-serif ;
   --scroll-light: 0;
+  --nav-height: 94px;
 }
 
 body{
@@ -45,6 +46,10 @@ body{
   color: white;
 }
 
+header[id],
+main section[id] {
+  scroll-margin-top: var(--nav-height);
+}
 
 
 
