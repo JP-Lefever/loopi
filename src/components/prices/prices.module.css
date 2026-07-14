@@ -1,173 +1,198 @@
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 90vh;
 
+.section {
+    position: relative;
+
+    color: #f5f2ec;
+    padding: 6rem 2rem 7rem;
+    overflow: hidden;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+/* Heading */
+
+.h1 {
+    position: relative;
+    font-family: var(--title-font), sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 1.25;
+    max-width: 35vw;
+    margin: 0 0 2em 2.5em;
+    color: var(--white-pure);
+}
+
+/* "TARIFS" e */
+/*.h1::before {*/
+/*    content: "Tarifs";*/
+/*    display: block;*/
+/*    text-transform: uppercase;*/
+/*    font-family: "Inter", sans-serif;*/
+/*    font-size: 0.75rem;*/
+/*    font-weight: 600;*/
+/*    letter-spacing: 0.15em;*/
+/*    color: #e0b656;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+/*Cards  */
 
 .sectionPrice {
     display: flex;
-    width: 80vw;
-    margin: auto;
-    text-align: center;
-    color : var(--white-platinium);
-    justify-content: center;
-    @media screen and (max-width: 568px)  {
-        display: flex;
-        flex-direction: column;
-        width: 90vw;
-        gap : 2em
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px)  {
-        display: flex;
-        flex-direction: column;
-        width: 70vw;
-        gap : 2em
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1280px)  {
-
-        width: 90vw;
-
-    }
-
+    align-items: flex-start;
+    gap: 1.75em;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
-.h1 {
-    margin : 5vh;
-    font-family: var(--title-font2), sans-serif;
-    color : var(--white-platinium);
-    font-size: 6em;
-    @media screen and (max-width: 375px)  {
-        letter-spacing: 0.1em;
-        padding-bottom: 0.5em;
-        text-align: center;
-        font-size: 2.5em;
-    }
-    @media screen and (min-width: 375px) and (max-width: 568px) {
-        letter-spacing: 0.1em;
-        padding-bottom: 0.5em;
-        text-align: center;
-        font-size: 3em;
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px) {
-        letter-spacing: 0.1em;
-        text-align: center;
-        font-size: 5em;
-    }
+.article {
+    position: relative;
+    flex: 1 1 10vw;
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 2.5rem 2.25rem 2rem;
+    counter-increment: card;
+    transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
-.h2{
-    font-family: var(--title-font2), sans-serif;
-    padding : 1em;
-    background-color: var(--black-nuance);
-    font-size: 2em;
-    @media screen and (max-width: 375px)  {
-        font-size: 1.8em;
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1280px)  {
-        font-size: 1.5em;
-
-    }
+.article:hover {
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
 
-
-.article{
-    display: flex;
-    align-items: flex-end;
-
-
+/* Middle card ("Site vitrine") highlighted as the recommended plan */
+.article:nth-child(2) {
+    background: #14120f;
+    border: 1px solid var(--beige-orange);
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+    padding-top: 3.5rem;   /* 2.5rem d'origine + 1rem pour compenser le margin-top négatif */
+    padding-bottom: 3rem;  /* idem pour le bas */
+    z-index: 1;            /* pour qu'elle passe visuellement au-dessus si jamais ça chevauche */
 }
 
-.article:nth-child(2) .ul li:last-child {
-    height: 12vh;
-    @media screen  and (max-width: 1024px) {
-        height: fit-content;
-    }
+/*.article:nth-child(2)::after {*/
+/*    content: "Recommandé";*/
+/*    position: absolute;*/
+/*    top: -13px;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    background: var(--beige-orange);*/
+/*    color: #14120f;*/
+/*    font-size: 0.7em;*/
+/*    font-weight: 700;*/
+/*    letter-spacing: 0.08em;*/
+/*    text-transform: uppercase;*/
+/*    padding: 5px 14px;*/
+/*    border-radius: 6px;*/
+/*    white-space: nowrap;*/
+/*}*/
 
-    @media screen and (min-width: 1024px) and (max-width: 1280px)  {
-        height: 15vh;
-    }
+/* Card title */
+
+.h2 {
+    font-family: var(--title-font4), sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0 0 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+/*List / features */
 
 .ul {
     list-style: none;
-    background-color: var(--black-nuance);
-    @media screen and (min-width: 568px) and (max-width: 1024px)  {
-        font-size: 1.2em;
-    }
+    margin: 0;
+    padding: 0;
 }
 
-
-
 .ul li {
-    border-top: solid 1px var(--white-platinium);
-    border-bottom: solid 1px var(--white-platinium);
-    padding : 1em;
-    font-family: var(--paragraph-font), sans-serif;
-    font-weight: lighter;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media screen and (min-width: 1024px) and (max-width: 1280px)  {
-        width: 30vw;
-        height: 7vh;
-    }
+    align-items: flex-start;
+    gap: 0.75em;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: rgba(245, 242, 236, 0.85);
 }
 
 .ul li:last-child {
-    border-bottom : none;
+    border-bottom: none;
 }
 
-.sectionPrice .article:first-child div {
-    border-left: solid 2px var(--beige-orange);
-    border-top: solid 2px var(--beige-orange);
-    border-bottom: solid 2px var(--beige-orange);
-    border-top-width: 10px;
-    border-top-left-radius: 10px;
-    @media screen and (max-width: 1024px)  {
-        border-right: solid 2px var(--beige-orange);
-        border-top-right-radius: 10px;
-    }
+/* bullet */
+.ul li:not(.price):not(:last-child)::before {
+    content: "\2713";
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(245, 242, 236, 0.35);
+    border-radius: 50%;
+    font-size: 0.65rem;
+    color: rgba(245, 242, 236, 0.85);
+    margin-top: 1px;
 }
 
-.sectionPrice .article:nth-child(2) div {
-    border: solid 2px var(--red);
-    border-top-width: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+/* Price line */
+
+.price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4em;
+    padding-top: 0;
+    padding-bottom: 1.75em !important;
+    margin-bottom: 0.5em;
+    font-family: var(--title-font), sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #e0b656;
 }
 
-.sectionPrice .article:last-child div {
-    border-right: solid 2px var(--beige-orange);
-    border-top: solid 2px var(--beige-orange);
-    border-bottom: solid 2px var(--beige-orange);
-    border-top-width: 10px;
-    border-top-right-radius: 10px;
-    @media screen and (max-width: 1024px)  {
-        border-left: solid 2px var(--beige-orange);
-        border-top-left-radius: 10px;
-    }
+.price::before {
+    content: "À partir de";
+    font-family: var(--title-font), sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: rgba(245, 242, 236, 0.5);
 }
 
+/* Delay line (last li) */
 
-.ul li.price {
-    font-weight: bolder;
-    color: var(--beige-orange);
-    width: 25vw;
-    @media screen and (max-width: 568px)  {
-        width: 90vw;
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px)  {
-        display: flex;
+.ul li:last-child {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4em;
+    padding-top: 1.75em;
+    margin-top: 0.25em;
+    font-size: 1.05em;
+    color: #f5f2ec;
+}
+
+.ul li:last-child::before {
+    content: "Délai";
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: rgba(245, 242, 236, 0.5);
+}
+
+/*  Responsive  */
+
+@media (max-width: 900px) {
+    .sectionPrice {
         flex-direction: column;
-        width: 70vw;
-        gap : 2em
     }
-    @media screen and (min-width: 1024px) and (max-width: 1280px)  {
-        width: 30vw;
 
+    .article:nth-child(2) {
+        order: -1;
     }
 }

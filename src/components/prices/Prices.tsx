@@ -8,7 +8,7 @@ export  default function Prices(){
     return (
         <>
             <section className={styles.section}>
-                <h1 className={styles.h1}>{"Découvrez nos offres"}</h1>
+                <h1 className={styles.h1}>{"Des solutions adaptées à chaque projet"}</h1>
                     <ScrollAnimation className={styles.sectionPrice}>
                     {dataCost.services.map((item : CostServicesProps) => (
                         <ScrollAnimation1 className={styles.article} key={item.id}>

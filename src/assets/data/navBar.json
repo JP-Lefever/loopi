@@ -2,7 +2,7 @@
   {
     "id" : 1,
     "label" : "Accueil",
-    "link" : "/"
+    "link" : "/#accueil"
   },
   {
     "id" : 6,
@@ -27,7 +27,7 @@
   {
     "id" : 4,
     "label" : "Contact",
-    "link" : "/contact"
+    "link" : "/#contact"
   }
 
 

@@ -1,47 +1,130 @@
-
-
-.section{
+.section {
+    position: relative;
+    height: 260vh;
     width: 95vw;
     margin: 0 auto 10vh auto;
-    background-color: var(--black-nuance);
     border-radius: 10px;
 
     @media screen and (min-width: 1024px) and (max-width: 1280px) {
         width: 98vw;
     }
+
+    /* Sur mobile, le scroll horizontal piloté au scroll est peu ergonomique :
+       on repasse en scroll natif classique (voir .viewport en media query) */
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
 }
 
-
-
-.sectionCard{
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
     display: flex;
-    padding: 20px;
-    min-height: 85vh;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    @media screen and (max-width: 568px){
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        padding: 10px;
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px;
-        min-height: fit-content;
+    overflow: hidden;
 
+    @media screen and (max-width: 768px) {
+        position: static;
+        height: auto;
+        padding: 40px 0;
     }
-
 }
 
+.intro {
+    margin-top: 4em;
+    width: 20vw;
+    height: 10vh;
+    border : solid 1px white;
+    position: relative;
 
+    z-index: 1;
+}
 
-.h2{
+.p{
+    border : solid 1px white;
+    width: 20vw;
+    height: 10vh;
+   z-index: 2;
+    position: absolute;
+    bottom: 2vh;
+    left: 1vw;
+    color : var(--black-nuance);
+}
+
+.h2 {
     font-family: var(--title-font2), sans-serif;
     font-size: var(--title-size);
-    height: 15vh;
-    padding-left: 1em;
+}
+
+.scrollHint {
+    font-family: var(--paragraph-font), sans-serif;
+    color: var(--beige-orange);
+    opacity: 0.7;
+    margin-top: 0.5em;
+}
+
+.viewport {
+    width: 100%;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* La piste : toutes les cartes alignées en ligne, largeur totale > viewport.
+   C'est elle qui reçoit le translateX calculé en JS. */
+.track {
+    display: flex;
+    gap: 2vw;
+    padding: 0 4vw;
+    width: max-content;
+    will-change: transform;
+
+    @media screen and (max-width: 768px) {
+        transform: none !important;
+        will-change: auto;
+    }
+}
 
 
+.frame {
+    position: relative;
+    width: fit-content;
+    max-width: 15vw;
+    height: fit-content;
+    margin: 0 4vw 3em 4vw;
+    padding: 1.6em 2em;
+    background-color: var(--blue-coin);
+    border: 1px solid var(--white-platinium);
+
+    /* le double-cadre vient uniquement de cette ombre plate, sans flou */
+    box-shadow: 8px 8px 0 0 var(--beige-orange);
+
+    /* texture grain */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+    background-blend-mode: overlay;
+
+    /* petite rotation = effet "posé à la main", pas parfaitement aligné */
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+
+    @media screen and (max-width: 768px) {
+        max-width: 90vw;
+    }
+}
+
+
+
+.frameText {
+    position: relative;
+    font-family: var(--title-font3), sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    color: white;
+    margin: 0;
 }

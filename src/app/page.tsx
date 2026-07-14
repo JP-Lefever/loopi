@@ -4,6 +4,7 @@ import Works from "@/components/works/Works";
 import Process from "@/components/process/Process";
 import Prices from "@/components/prices/Prices";
 import About from "@/components/about/About";
+import ButtonContact from "@/components/ui/buttonContact/ButtonContact"
 import type {Metadata} from "next";
 
 export const metadata: Metadata = {
@@ -45,7 +46,7 @@ export default function HomePage() {
     return (
         <>
 
-            <header>
+            <header id={"accueil"}>
                     <Header />
             </header>
             <main>
@@ -60,6 +61,9 @@ export default function HomePage() {
                 </section>
                 <section id={"tarifs"}>
                     <Prices/>
+                </section>
+                <section id={"contact"}>
+                    <ButtonContact/>
                 </section>
 
             </main>

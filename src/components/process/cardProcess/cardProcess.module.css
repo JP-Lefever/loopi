@@ -1,84 +1,66 @@
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    min-height: 80vh;
-    width: 23vw;
+    flex-shrink: 0;
+    width: 28vw;
+    min-height: 60vh;
     background-color: var(--blue-coin);
-    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+    scroll-snap-align: start;
 
+    @media screen and (max-width: 1024px) {
+        width: 60vw;
+    }
 
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 768px) {
+        width: 80vw;
         min-height: fit-content;
-        width: 90vw;
-        margin : 0;
-
     }
-    @media screen and (min-width: 375px) and (max-width: 568px){
-        min-height: fit-content;
-        width: 90vw;
-        margin : 0;
-
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
-        width: 43vw;
-
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1280px) {
-
-        min-height: 87vh;
-    }
-
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-.imageContainer{
+.number {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    font-family: var(--title-font2), sans-serif;
+    font-size: 1.2em;
+    color: var(--beige-orange);
+    opacity: 0.8;
+}
+
+.imageContainer {
     position: relative;
     width: 100%;
-    min-height: 50vh;
-
-
+    min-height: 38vh;
 }
 
 .image {
     object-fit: cover;
 }
 
-.infoContainer{
-    font-family: var(--paragraph-font),sans-serif;
+.infoContainer {
+    font-family: var(--paragraph-font), sans-serif;
     line-height: 1.5em;
-    width: 20vw;
     color: white;
     font-weight: lighter;
-    @media screen and (max-width: 568px){
-        width: 80vw;
-        padding : 10px;
-        min-height: fit-content;
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
-        width: 43vw;
-        padding : 10px;
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1280px) {
-        width: 23vw;
-        padding : 10px;
-    }
+    padding: 1.5em;
 }
 
-.title{
-    font-family: var(--title-font2),sans-serif;
-    font-size: 1.8em;
-    text-align: center;
-    margin : 1em auto;
-    color: var(--beige-orange );
-    @media screen and (max-width: 568px){
-
-        margin : 0.5em auto;
-    }
+.title {
+    font-family: var(--title-font2), sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    color: var(--beige-orange);
 }
 
-
+.description {
+    opacity: 0.9;
+}

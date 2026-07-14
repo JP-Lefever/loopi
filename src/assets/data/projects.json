@@ -1,30 +1,31 @@
   [
     {
-      "id" : 5,
-      "name" : "E.F.F.C.A",
-      "image" : "/images/projects/EFFCA.webp",
-      "type" : "Voir le site",
-      "synopsis" : "Site web pour le club de football du village de Fons",
-      "web" : "https://effca.fr/"
-
-    },
-    {
       "id" : 4,
       "name" : "La Compagnie L'Enclos",
-      "image" : "/images/projects/enclos_v2.webp",
+      "image" : "/images/projects/lenclos.webp",
       "type" : "Voir le site",
       "synopsis" : "Site web pour compagnie de théâtre professionnelle",
-      "web" : "https://lenclos.vercel.app/"
+      "web" : "https://lenclos.vercel.app/",
+      "year" : "2026"
+    },
+    {
+      "id" : 5,
+      "name" : "E.F.F.C.A",
+      "image" : "/images/projects/effca.webp",
+      "type" : "Voir le site",
+      "synopsis" : "Site web pour le club de football du village de Fons",
+      "web" : "https://effca.fr/",
+      "year" : "2025"
 
     },
     {
       "id" : 3,
-      "name" : "Camping",
-      "image" : "/images/projects/camping.webp",
+      "name" : "Glamping spot",
+      "image" : "/images/projects/glamping.webp",
       "type" : "Voir le site",
       "synopsis" : "Site vitrine pour camping/village vacances",
-      "web" : "https://camping-seven-mu.vercel.app/"
-
+      "web" : "https://camping-seven-mu.vercel.app/",
+      "year" : "2025"
     }
 
   ]
