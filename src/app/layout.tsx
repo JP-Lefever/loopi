@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
+import styles from "./page.module.css"
 import React from "react";
 import {paragraphFont, subtitle, title, text} from "@/components/ui/fonts";
 import NavBar from "@/components/layout/navBar/NavBar";
@@ -8,6 +9,7 @@ import {ToastContainer} from "react-toastify";
 import Footer from "@/components/layout/footer/Footer";
 import Background from "@/components/ui/backgound/Background";
 import ScrollLight from "@/components/ui/ScrollLight/ScrollLight";
+import WorkOnResponsive from "@/components/layout/workOnResponsive/WorkOnResponsive";
 
 
 
@@ -110,10 +112,15 @@ export default function RootLayout({
               pauseOnHover
               theme="colored"
           />
-            <NavBar />
-            {children}
-            <Footer />
-            <Analytics/>
+            <div className={styles.desktopOnly}>
+                <NavBar />
+                {children}
+                <Footer />
+                <Analytics/>
+            </div>
+            <div className={styles.mobileOnly}>
+                <WorkOnResponsive/>
+            </div>
       </body>
     </html>
   );
