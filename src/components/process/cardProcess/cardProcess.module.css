@@ -13,11 +13,18 @@
 
     @media screen and (max-width: 1024px) {
         width: 60vw;
+
     }
 
     @media screen and (max-width: 768px) {
-        width: 80vw;
+        width: 90vw;
         min-height: fit-content;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        width: 35vw;
+        min-height: 70vh;
+
     }
 }
 

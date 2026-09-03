@@ -6,10 +6,7 @@ import dataServices from "@/assets/data/services.json"
 import CardProcess from "@/components/process/cardProcess/CardProcess"
 import { ServicesProps } from "@/types/definitions"
 
-// END_SPACE_RATIO : proportion de la largeur d'écran laissée "vide"
-// après la dernière carte, avant que le scroll horizontal s'arrête.
-// 0 = la dernière carte vient à ras du bord droit (comportement actuel)
-// 0.5 = la dernière carte s'arrête pile au milieu de l'écran
+
 const END_SPACE_RATIO = 0.3
 
 export default function Process() {
@@ -18,9 +15,7 @@ export default function Process() {
     const [progress, setProgress] = useState(0)
     const [sectionHeight, setSectionHeight] = useState<number | null>(null)
 
-    // Calcule la hauteur de section en fonction de la distance horizontale
-    // RÉELLE à parcourir (avec l'espace de fin inclus), pour que le scroll
-    // vertical et le scroll horizontal se terminent exactement ensemble.
+
     useEffect(() => {
         const track = trackRef.current
         if (!track) return
@@ -80,7 +75,7 @@ export default function Process() {
         }
     }, [sectionHeight])
 
-    // translation horizontale = progress * distance réelle (avec l'espace de fin inclus)
+
     const trackStyle = trackRef.current
         ? {
             transform: `translateX(-${
