@@ -1,11 +1,13 @@
-
 .section {
     position: relative;
-
-    color: #f5f2ec;
+    color: var(--white-platinium);
     padding: 6rem 2rem 7rem;
     overflow: hidden;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: var(--title-font2), sans-serif;
+
+    @media screen and (max-width: 1024px) {
+        padding: 0;
+    }
 }
 
 /* Heading */
@@ -19,6 +21,22 @@
     max-width: 35vw;
     margin: 0 0 2em 2.5em;
     color: var(--white-pure);
+
+    @media screen and (max-width: 568px) {
+        font-size: 1.6em;
+        max-width: 90vw;
+        margin: 10vh 1em;
+    }
+
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        font-size: 2.5em;
+        max-width: 90vw;
+        margin: 10vh 1em;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+        /* réservé si besoin d'un ajustement propre à cette plage */
+    }
 }
 
 /* "TARIFS" e */
@@ -34,7 +52,7 @@
 /*    margin-bottom: 1rem;*/
 /*}*/
 
-/*Cards  */
+/* Cards */
 
 .sectionPrice {
     display: flex;
@@ -43,6 +61,18 @@
     flex-wrap: wrap;
     max-width: 80vw;
     margin: 0 auto;
+
+    @media screen and (max-width: 568px) {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw;
+    }
+
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        flex-direction: row;
+        max-width: 90vw;
+
+    }
 }
 
 .article {
@@ -54,12 +84,20 @@
     padding: 2.5rem 2.25rem 2rem;
     counter-increment: card;
     transition: border-color 0.25s ease, transform 0.25s ease;
+
+    @media screen and (max-width: 568px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        min-height: 65vh;
+
+    }
 }
 
 .article:hover {
     border-color: rgba(255, 255, 255, 0.25);
 }
-
 
 /* Middle card ("Site vitrine") highlighted as the recommended plan */
 .article:nth-child(2) {
@@ -67,9 +105,21 @@
     border: 1px solid var(--beige-orange);
     margin-top: -1.5rem;
     margin-bottom: -1.5rem;
-    padding-top: 3.5rem;   /* 2.5rem d'origine + 1rem pour compenser le margin-top négatif */
-    padding-bottom: 3rem;  /* idem pour le bas */
-    z-index: 1;            /* pour qu'elle passe visuellement au-dessus si jamais ça chevauche */
+    padding-top: 3.5rem; /* 2.5rem d'origine + 1rem pour compenser le margin-top négatif */
+    padding-bottom: 3rem; /* idem pour le bas */
+    z-index: 1; /* pour qu'elle passe visuellement au-dessus si jamais ça chevauche */
+
+    @media screen and (max-width: 568px) {
+        margin-top: 0;
+        margin-bottom: 0;
+        order: -1;
+    }
+
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        margin-top: 0;
+        margin-bottom: 0;
+        order: -1;
+    }
 }
 
 /*.article:nth-child(2)::after {*/
@@ -100,12 +150,15 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/*List / features */
+/* List / features */
 
 .ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        font-size: 1.4em;
+    }
 }
 
 .ul li {
@@ -183,16 +236,4 @@
     font-weight: 600;
     letter-spacing: 0.1em;
     color: rgba(245, 242, 236, 0.5);
-}
-
-/*  Responsive  */
-
-@media (max-width: 900px) {
-    .sectionPrice {
-        flex-direction: column;
-    }
-
-    .article:nth-child(2) {
-        order: -1;
-    }
 }
