@@ -26,6 +26,15 @@
       "synopsis" : "Site vitrine pour camping/village vacances",
       "web" : "https://camping-seven-mu.vercel.app/",
       "year" : "2025"
+    },
+    {
+      "id" : 2,
+      "name" : "Portfolio",
+      "image" : "/images/projects/portfolio.webp",
+      "type" : "Voir le site",
+      "synopsis" : "Portfolio pour développeur web",
+      "web" : "https://jplef.fr/",
+      "year" : "2025"
     }
 
   ]
