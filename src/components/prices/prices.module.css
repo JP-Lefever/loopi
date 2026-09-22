@@ -35,7 +35,7 @@
     }
 
     @media screen and (min-width: 1024px) and (max-width: 1280px) {
-        /* réservé si besoin d'un ajustement propre à cette plage */
+        max-width: 50vw;
     }
 }
 
@@ -90,7 +90,7 @@
     }
 
     @media screen and (min-width: 568px) and (max-width: 1024px) {
-        min-height: 65vh;
+        min-height: 78vh;
 
     }
 }
@@ -170,6 +170,9 @@
     font-size: 0.95rem;
     line-height: 1.4;
     color: rgba(245, 242, 236, 0.85);
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        font-size: 0.9em;
+    }
 }
 
 .ul li:last-child {
