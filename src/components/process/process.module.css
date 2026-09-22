@@ -4,127 +4,186 @@
     width: 95vw;
     margin: 0 auto 10vh auto;
     border-radius: 10px;
+}
 
-    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .section {
         width: 98vw;
     }
-
-    /* Sur mobile, le scroll horizontal piloté au scroll est peu ergonomique :
-       on repasse en scroll natif classique (voir .viewport en media query) */
-    @media screen and (max-width: 768px) {
-        height: auto;
-    }
 }
+
 
 .sticky {
     position: sticky;
     top: 0;
     height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     overflow: hidden;
-
-    @media screen and (max-width: 768px) {
-        position: static;
-        height: auto;
-        padding: 40px 0;
-    }
 }
 
-.intro {
-    margin-top: 4em;
-    width: 20vw;
-    height: 10vh;
-    border : solid 1px white;
-    position: relative;
-
-    z-index: 1;
-}
-
-.p{
-    border : solid 1px white;
-    width: 20vw;
-    height: 10vh;
-   z-index: 2;
-    position: absolute;
-    bottom: 2vh;
-    left: 1vw;
-    color : var(--black-nuance);
-}
-
-.h2 {
-    font-family: var(--title-font2), sans-serif;
-    font-size: var(--title-size);
-}
-
-.scrollHint {
-    font-family: var(--paragraph-font), sans-serif;
-    color: var(--beige-orange);
-    opacity: 0.7;
-    margin-top: 0.5em;
-}
 
 .viewport {
     width: 100%;
     overflow: hidden;
-
-    @media screen and (max-width: 768px) {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-    }
 }
 
-/* La piste : toutes les cartes alignées en ligne, largeur totale > viewport.
-   C'est elle qui reçoit le translateX calculé en JS. */
+
 .track {
     display: flex;
     gap: 2vw;
-    padding: 0 4vw;
-    width: max-content;
-    will-change: transform;
 
-    @media screen and (max-width: 768px) {
-        transform: none !important;
-        will-change: auto;
-    }
+    padding: 0 4vw;
+
+    width: max-content;
+
+    will-change: transform;
 }
+
 
 
 .frame {
     position: relative;
+
     width: fit-content;
     max-width: 15vw;
     height: fit-content;
+
     margin: 0 4vw 3em 4vw;
     padding: 1.6em 2em;
+
     background-color: var(--blue-coin);
+
     border: 1px solid var(--white-platinium);
 
-    /* le double-cadre vient uniquement de cette ombre plate, sans flou */
     box-shadow: 8px 8px 0 0 var(--beige-orange);
 
-    /* texture grain */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+
     background-blend-mode: overlay;
 
-    /* petite rotation = effet "posé à la main", pas parfaitement aligné */
     transform: rotate(-1deg);
+
     transition: transform 0.3s ease;
 
-    @media screen and (max-width: 768px) {
-        max-width: 90vw;
+    @media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+            max-width: 30vw;
+
+    }
+}
+
+
+.frameText {
+    position: relative;
+
+    font-family: var(--title-font3), sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+
+    color: white;
+
+    margin: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+
+    .section {
+
+        height: auto !important;
+
+        width: 90vw;
+
+        margin: 0 auto 10vh auto;
+    }
+
+
+    .sticky {
+
+        position: relative;
+
+        top: auto;
+
+        height: auto;
+
+        display: block;
+
+        overflow: visible;
+    }
+
+
+    .viewport {
+
+        width: 100%;
+
+        overflow: visible;
+    }
+
+
+    .track {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 3rem;
+
+        width: 100%;
+
+        padding: 0;
+
+
+        transform: none !important;
+
+        will-change: auto;
+    }
+
+
+    .frame {
+        width: auto;
+
+        max-width: none;
+
+        margin: 0 0 4rem 0;
+
+        padding: 1.5em;
+
+        box-sizing: border-box;
     }
 }
 
 
 
-.frameText {
-    position: relative;
-    font-family: var(--title-font3), sans-serif;
-    font-size: 0.95em;
-    line-height: 1.5em;
-    color: white;
-    margin: 0;
+@media screen and (max-width: 768px) {
+
+    .section {
+        width: 88vw;
+    }
+
+
+    .track {
+        gap: 2.5rem;
+    }
+
+
+    .frame {
+        padding: 1.3em;
+        margin: 3rem 0;
+    }
+
+
+    .frameText {
+        font-size: 0.9em;
+        line-height: 1.5;
+
+    }
 }

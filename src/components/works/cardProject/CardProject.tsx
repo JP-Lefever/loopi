@@ -24,24 +24,24 @@ export default function CardProject({ dataProject }: { dataProject: ProjectProps
         className={styles.sectionCard}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onMouseMove={handleMouseMove}
-            >
+        onMouseMove={handleMouseMove}>
+
             <article className={styles.sectionInfo}>
             <h2 className={styles.h2}>{name}</h2>
-        <p className={styles.syno}>{synopsis}</p>
-        <p className={styles.year}>{year}</p>
-    </article>
+            <p className={styles.syno}>{synopsis}</p>
+            <p className={styles.year}>{year}</p>
+            </article>
 
-        <article
-            className={styles.imageWrapper}
-            style={{
-                left: mousePos.x,
-                top: mousePos.y,
-                opacity: isHovered ? 1 : 0,
-            }}
-        >
-            <Image className={styles.image} src={image} alt={name} width={320} height={220} />
-        </article>
+            <article
+                className={styles.imageWrapper}
+                style={{
+                    left: mousePos.x,
+                    top: mousePos.y,
+                    opacity: isHovered ? 1 : 0,
+                }}
+            >
+                <Image className={styles.image} src={image} alt={name} width={320} height={220} />
+            </article>
     </a>
     )
     }
