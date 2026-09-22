@@ -112,15 +112,13 @@ export default function RootLayout({
               pauseOnHover
               theme="colored"
           />
-            <div className={styles.desktopOnly}>
+
                 <NavBar />
                 {children}
                 <Footer />
                 <Analytics/>
-            </div>
-            <div className={styles.mobileOnly}>
-                <WorkOnResponsive/>
-            </div>
+
+
       </body>
     </html>
   );

@@ -1,16 +1,24 @@
 "use client"
-import {ReactNode, useRef} from "react";
-import {motion, useInView} from "framer-motion";
+import { ReactNode, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 type ScrollAnimationType = {
     children: ReactNode;
     className?: string;
     id?: string;
+    amount?: number | "some" | "all";
+    margin?: string;
 };
 
-export const ScrollAnimation = ({ children, className }: ScrollAnimationType) => {
+export const ScrollAnimation = ({
+                                    children,
+                                    className,
+                                    amount = 0.05,
+                                    margin = "0px 0px -15% 0px",
+                                }: ScrollAnimationType) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, amount: 0.2 });
+    // @ts-expect-error - framer-motion type pour margin attend un format spécifique mais accepte une string CSS classique
+    const isInView = useInView(ref, { once: true, amount, margin });
 
     const variants = {
         hidden: {},
