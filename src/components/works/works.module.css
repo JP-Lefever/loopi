@@ -41,6 +41,16 @@
     }
 }
 
+.h1{
+    display: none;
+    @media screen and (max-width: 568px) {
+        display: block;
+        color: var(--white-platinium);
+        font-family: var(--title-font), sans-serif;
+    }
+
+}
+
 .h2 {
     text-align: left;
     font-size: 6em;
