@@ -3,6 +3,7 @@
 import styles from "./header.module.css"
 import dataHeader from "@/assets/data/header.json"
 import { CircleArrowDown } from 'lucide-react';
+import ButtonContact from "@/components/ui/buttonContact/ButtonContact";
 
 
 
@@ -19,7 +20,7 @@ export default function Header() {
             </article>
 
             <article className={styles.article}>
-                <CircleArrowDown className={styles.circle} size={70} />
+                <ButtonContact/>
             </article>
         </header>
     )

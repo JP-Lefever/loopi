@@ -129,38 +129,14 @@
     }
 }
 
-.videoWrapper{
-    position: relative;
-    width: 45vw;
-    height: 50vh;
-    border-radius: 20px;
-
-    @media screen and  (max-width: 568px){
-        width: 90vw;
-        height: 32vh;
-    }
-    @media screen and (min-width: 568px) and (max-width: 1024px){
-        width: 85vw;
-        height: 42vh;
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1280px){
-        width: 50vw;
-        height: 45vh;
-    }
-}
-
-.video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-
-}
 
 .article {
     width : fit-content;
     margin : auto;
-    animation: bounceDown 1s ease-in-out infinite;
     color : var(--beige-orange);
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        margin : -2vh auto;
+    }
 }
 
 .circle {
@@ -177,13 +153,3 @@
     }
 }
 
-@keyframes bounceDown {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-}

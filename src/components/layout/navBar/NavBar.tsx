@@ -143,6 +143,12 @@ export default function NavBar() {
         performScroll(id);
     };
 
+    useEffect(() => {
+        if (pathname !== "/") {
+            setActiveSection("");
+        }
+    }, [pathname]);
+
     return (
         <nav className={styles.nav}>
             <Link href="/">
@@ -193,6 +199,7 @@ export default function NavBar() {
                     const isActive = activeSection === sectionId;
 
                     return (
+
                         <li
                             key={item.id}
                             className={clsx(styles.link, {
@@ -209,8 +216,12 @@ export default function NavBar() {
                                 {item.label}
                             </button>
                         </li>
+
                     );
                 })}
+                    <li><Link  className={clsx(styles.link, {
+                        [styles.active] : pathname === "/contact",
+                    })} href={"/contact"}>{"Contact"}</Link></li>
             </ul>
         </nav>
     );
