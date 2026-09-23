@@ -1,5 +1,5 @@
 "use client"
-import { useMemo } from "react"
+import { useEffect, useMemo, useState } from "react"
 import styles from "./buttonContact.module.css"
 import Link from "next/link";
 
@@ -14,52 +14,73 @@ function mulberry32(seed: number) {
 }
 
 const BUBBLE_COUNT = 500
+const BASE_SIZE = 320 // taille de référence desktop, doit matcher .button en CSS
 
 function generateBubbles() {
     const rand = mulberry32(42)
     return Array.from({ length: BUBBLE_COUNT }, () => {
         const angle = rand() * 360
-        const distance = 35 + rand() * 60 // 45–105px : chevauche volontairement le cercle avant
+        const distance = 35 + rand() * 60
         const size = 3 + rand() * 9
         const opacity = 0.3 + rand() * 0.6
-        const duration = 22 + rand()  // orbite rapide : 0.8–2.2s
-        const direction = rand() > 0.5 ? 1 : -1 // sens horaire / anti-horaire mélangés
+        const duration = 22 + rand()
+        const direction = rand() > 0.5 ? 1 : -1
         return { angle, distance, size, opacity, duration, direction }
     })
 }
 
 export default function GetInTouchButton() {
     const bubbles = useMemo(generateBubbles, [])
+    const [scale, setScale] = useState(1)
+
+    useEffect(() => {
+        const mqlTablet = window.matchMedia("(min-width: 568px) and (max-width: 1024px)")
+        const mqlMobile = window.matchMedia("(max-width: 568px)")
+
+        const updateScale = () => {
+            if (mqlMobile.matches) setScale(180 / BASE_SIZE)
+            else if (mqlTablet.matches) setScale(240 / BASE_SIZE)
+            else setScale(1)
+        }
+
+        updateScale()
+        mqlTablet.addEventListener("change", updateScale)
+        mqlMobile.addEventListener("change", updateScale)
+        return () => {
+            mqlTablet.removeEventListener("change", updateScale)
+            mqlMobile.removeEventListener("change", updateScale)
+        }
+    }, [])
 
     return (
-        <Link href={"/contact"} className={styles.button}  aria-label="Contact">
-      <span className={styles.bubbles}>
-        {bubbles.map((b, i) => (
-            <span
-                key={i}
-                className={styles.orbit}
-                style={{
-                    ["--angle" as string]: `${b.angle}deg`,
-                    ["--spin" as string]: `${360 * b.direction}deg`,
-                    animationDuration: `${b.duration}s`,
-                } as React.CSSProperties}
-            >
-            <span
-                className={styles.bubble}
-                style={{
-                    left: b.distance,
-                    width: b.size,
-                    height: b.size,
-                    opacity: b.opacity,
-                }}
-            />
-          </span>
-        ))}
-      </span>
+        <Link href={"/contact"} className={styles.button} aria-label="Contact">
+            <span className={styles.bubbles}>
+                {bubbles.map((b, i) => (
+                    <span
+                        key={i}
+                        className={styles.orbit}
+                        style={{
+                            ["--angle" as string]: `${b.angle}deg`,
+                            ["--spin" as string]: `${360 * b.direction}deg`,
+                            animationDuration: `${b.duration}s`,
+                        } as React.CSSProperties}
+                    >
+                        <span
+                            className={styles.bubble}
+                            style={{
+                                left: b.distance * scale,
+                                width: b.size * scale,
+                                height: b.size * scale,
+                                opacity: b.opacity,
+                            }}
+                        />
+                    </span>
+                ))}
+            </span>
 
             <span className={styles.circle}>
-        <span className={styles.label}>{"Un projet ?"}</span>
-      </span>
+                <span className={styles.label}>{"Un projet ?"}</span>
+            </span>
         </Link>
     )
 }

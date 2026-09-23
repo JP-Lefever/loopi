@@ -74,6 +74,9 @@
 
 .menu {
     display: flex;
+    align-items: center;
+
+
     @media screen and (max-width: 375px) {
         flex-direction: column;
         position: absolute;
