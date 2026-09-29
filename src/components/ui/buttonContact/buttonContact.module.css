@@ -10,7 +10,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin : 15vh auto;
+    margin: auto;
+
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        width: 240px;
+        height: 240px;
+    }
+
+    @media screen and (max-width: 568px) {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 .bubbles {
@@ -62,11 +72,20 @@
     align-items: center;
     justify-content: center;
     transition: transform ease-in-out 0.2s;
+
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        width: 105px;
+        height: 105px;
+    }
+
+    @media screen and (max-width: 568px) {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .circle:hover {
     transform: scale(1.05);
-
 }
 
 .label {
@@ -79,8 +98,17 @@
     letter-spacing: 0.02em;
     color: black;
     pointer-events: none;
+
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: 568px) {
+        font-size: 0.7rem;
+        letter-spacing: 0.01em;
+    }
 }
 
 .circle:hover .label {
-    color : var(--beige-orange)
+    color: var(--beige-orange);
 }

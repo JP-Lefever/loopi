@@ -23,13 +23,15 @@
     "id" : 7,
     "label" : "Tarifs",
     "link" : "/#tarifs"
-  },
-  {
-    "id" : 4,
-    "label" : "Contact",
-    "link" : "/#contact"
   }
 
 
 
+
 ]
+
+//  {
+//    "id" : 4,
+//    "label" : "Contact",
+//    "link" : "/contact"
+//  }
