@@ -219,7 +219,7 @@ export default function NavBar() {
 
                     );
                 })}
-                    <li><Link  className={clsx(styles.link, {
+                    <li><Link onClick={handleMenuOpen}  className={clsx(styles.link, {
                         [styles.active] : pathname === "/contact",
                     })} href={"/contact"}>{"Contact"}</Link></li>
             </ul>
